@@ -1,0 +1,304 @@
+/*  
+
+You cannot edit main style.css file.
+
+All your custom style settings and tweaks can be placed here.
+
+Backup this file before theme update - so after update can be restored!
+ 
+*/
+
+.stuff,
+#header_bottom{ height:140px; bottom:0px; } /* slider + logo section height */
+
+.stuff .flexhead{ height:110px; }
+
+.logo_bottom img{height:100px;}
+
+#servicesbox li p{ height:190px; overflow:hidden;}
+
+#servicesbox li:hover{ background: #e1f0fa;}
+
+.section_template h2 { color:#fff !important; text-shadow:1px 1px 0 #000}
+
+.container_block{padding-top:120px !important; margin-bottom:40px !important;}
+
+@font-face {
+  font-family: 'ScalaSansBoldUpcase';
+  src: url('font/ScalaSansScWebPro-Bold.eot'); /* IE9 Compat Modes */
+  src: url('font/ScalaSansScWebPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/ScalaSansScWebPro-Bold.woff') format('woff'), /* Modern Browsers */
+       url('font/ScalaSansScCompPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'ScalaSansBold';
+  src: url('font/ScalaSansWebPro-Bold.eot'); /* IE9 Compat Modes */
+  src: url('font/ScalaSansWebPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/ScalaSansWebPro-Bold.woff') format('woff'), /* Modern Browsers */
+       url('font/ScalaSansCompPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'ScalaSansRegularUpcase';
+  src: url('font/ScalaSansScWebPro.eot'); /* IE9 Compat Modes */
+  src: url('font/ScalaSansScWebPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/ScalaSansScWebPro.woff') format('woff'), /* Modern Browsers */
+       url('font/ScalaSansScCompPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'ScalaSansRegular';
+  src: url('font/ScalaSansWebPro.eot'); /* IE9 Compat Modes */
+  src: url('font/ScalaSansWebPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/ScalaSansWebPro.woff') format('woff'), /* Modern Browsers */
+       url('font/ScalaSansCompPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'LetterwerkBold';
+  src: url('font/LetterwerkCarrosserieBold.otf')
+}
+
+@font-face {
+  font-family: 'LetterwerkRegular';
+  src: url('font/LetterwerkCarrosserieRegular.otf')
+}
+
+@font-face {
+  font-family: 'LetterwerkThin';
+  src: url('font/LetterwerkCarrosserieThin.otf')
+}
+
+@font-face {
+  font-family: 'LetterwerkLight';
+  src: url('font/LetterwerkCarrosserieLight.otf')
+}
+
+body{
+  font-family: 'LetterwerkLight', Helvetica, Arial, sans-serif !important;
+  color: #4d4d4d;
+}
+
+body.page #header, 
+body.single #header{
+  bottom: auto;
+  top: 0px;
+}
+
+/* header and nav */
+
+#header{
+  top: auto;
+  bottom: 0px;
+  background-image: none;
+  box-shadow: none;
+  background-color: #f0f2f2 !important;
+}
+
+#header .container{
+  max-width: 96% !important;
+}
+
+#logo_small{
+  width: 450px;
+  height: 27px !important;
+}
+
+#navigation h1 a, #navigation h1 a:hover{
+  font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif;
+  color: #4d4d4d !important;
+}
+
+#nav li a, #main-nav a{
+  font-family: 'LetterwerkLight', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.07em;
+  color: #243644;
+}
+
+#nav li a:hover, #main-nav a:hover, #navigation a:hover, #main-nav .current-menu-item a, #nav .current-menu-item.current a{
+  font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif;
+  color: #243644 !important;
+}
+
+#navigation ul li a{
+  border: 0px;
+}
+
+.bigmenu .navi, .bigmenu .scroll{
+  padding: 15px 0 11px 0;
+}
+
+#nav.scroll li:first-child, #main-nav li:first-child{
+  display: none;
+}
+
+/* end */
+
+/* product page secondary nav */
+
+h2.itemtitle{
+  font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif !important;
+  width: 100%;
+  text-align: center;
+  float: none;
+  margin-bottom: 100px;
+  font-weight: normal;
+  color: #243644;
+  letter-spacing: .03em !important;
+}
+
+.nav_item{
+  position: fixed;
+  top: 65px;
+  left: 0px;
+  width: 100%;
+  margin: 0px;
+  padding-top: 6px;
+  z-index: 100;
+  text-align: center;
+  background-color: white;
+  border-bottom: 2px solid #cccccc;
+  color: #cccccc;
+}
+
+.nav_item a span{
+  font-size: .6em;
+}
+
+.back_to_collection{
+  text-align: center;
+}
+
+.previous_product, .next_product{
+  position: absolute;
+}
+
+.previous_product{
+  left: 100px;
+  top: 9px;
+}
+
+.next_product{
+  right: 100px;
+  top: 9px;
+}
+
+/* end */
+
+/* homepage collections */
+
+#main #collection{
+  padding: 0px 10%;
+}
+
+#main #collection .container{
+  padding: 0px;
+  text-align: center;
+}
+
+#main #collection .container .loop .rad_big{
+  margin-top: -135px;
+  width: 100%;
+}
+
+#main #collection .container .imgwrap{
+  float: none;
+  overflow: visible;
+  margin-top: -76px;
+}
+
+#main #collection .container .imgwrap a{
+  display: block;
+  margin-top: -125px;
+}
+
+#main #collection .container .imgwrap .cats{
+  display: none;
+}
+
+img.attachment-folio{
+  width: 100%;
+  margin-top: -74px;
+  height: auto;
+}
+
+.hoverstuff-zoom, .hoverstuff-link{
+  display: none !important;
+}
+
+/* end */
+
+/* product page */
+
+.container{
+  min-width: 1130px !important;
+  max-width: 1130px !important;
+}
+
+.hrlineB, .hrline, .flex-direction-nav, #foliosidebar .meta, #menu-item-48{
+  display: none !important;
+}
+
+#foliocontent{
+  margin-bottom: 20px;
+  width: 59%;
+}
+
+.flex-control-paging{
+  position: static;
+  width: 100%;
+  text-align: center;
+}
+
+#foliocontent .tmnf-sc-box{
+  position: absolute;
+  top: 170px;
+  left: 10%;
+  border: 0px;
+  background-color: white;
+  font-family: 'ScalaSans', Helvetica, Arial, sans-serif !important;
+  font-size: 1.3em;
+  color: #243644;
+  text-align: center;
+}
+
+#item_content{
+  width: 38%;
+  position: absolute;
+  top: 270px;
+  right: 0px;
+  font-family: 'ScalaSans', Helvetica, Arial, sans-serif !important;
+}
+
+#item_content strong{
+  font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif !important;
+  color: #243644;
+  text-transform: uppercase;
+}
+
+.flex-control-nav li a {width: 16px; height: 20px; display: block; background:url(images/icons/bullets.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;opacity:1}
+.mainflex .flex-control-nav li a {background:url(images/icons/bullets.png)}
+
+/* end */
+
+/* static pages */
+
+.section_template{
+  background-color: #243644;
+}
+
+.section_template .container{
+  padding: 225px 2% 75px 2%;
+}
+
+.section_template .container h2{
+  display: none;
+}
+
+#footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}

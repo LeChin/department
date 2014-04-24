@@ -1,0 +1,22 @@
+/*
+ Theme Name:   Scroller Child
+ Theme URI:    http://deptofdecoration.com/scroller-child/
+ Description:  Scroller Child Theme
+ Author:       Nichole Barrett
+ Author URI:   http://deptofdecoration.com
+ Template:     scroller
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  scroller-child
+*/
+
+@import url("../scroller/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* gatherings page styles for popup */
+
+.popover .cq-arrow{
+  display: none !important;
+}

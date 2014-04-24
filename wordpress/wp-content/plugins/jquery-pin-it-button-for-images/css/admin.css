@@ -1,0 +1,49 @@
+#custom_button_preview {
+	text-indent: -9999px;
+	display:block;
+}
+
+.jpibfi-error-message {
+	font-weight: bold;
+	color: red;
+}
+
+input[type="checkbox"] ~ label {
+	padding-left: 5px;
+}
+
+input#custom_image_url {
+	width: 100%;
+}
+
+ul.jpibfi-classes-list {
+	margin: 0 0;
+	overflow: auto;
+	list-style-type: none;
+}
+
+ul.jpibfi-classes-list li {
+	float: left;
+	margin-right: 0;
+	padding: 0 20px 0 0;
+}
+
+ul.jpibfi-classes-list a {
+	display: inline-block;
+	text-indent: -9999px;
+	background-color: #ffffff;
+	background-image: url('../images/delete.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+ul.jpibfi-classes-list a:hover {
+	background-position: -16px 0;
+}
+
+ul.jpibfi-classes-list span {
+	padding-left: 5px;
+}

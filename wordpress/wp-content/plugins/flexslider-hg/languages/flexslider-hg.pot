@@ -1,0 +1,252 @@
+# Copyright (C) 2014 HG Slider
+# This file is distributed under the same license as the HG Slider package.
+msgid ""
+msgstr ""
+"Project-Id-Version: HG Slider 2.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/flexslider-hg\n"
+"POT-Creation-Date: 2014-04-22 08:43:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: flexslider-hg-init.php:13
+msgid "Slides"
+msgstr ""
+
+#: flexslider-hg-init.php:13 flexslider-hg.php:515
+msgid "Slide"
+msgstr ""
+
+#: flexslider-hg-init.php:13
+msgid "All Slides"
+msgstr ""
+
+#: flexslider-hg-init.php:13
+msgid "Add New Slide"
+msgstr ""
+
+#: flexslider-hg-init.php:13
+msgid "Edit Slide"
+msgstr ""
+
+#: flexslider-hg-init.php:13
+msgid "New Slide"
+msgstr ""
+
+#: flexslider-hg-init.php:13
+msgid "View Slide"
+msgstr ""
+
+#: flexslider-hg-init.php:13
+msgid "Search Slides"
+msgstr ""
+
+#: flexslider-hg-init.php:13
+msgid "No Slide found"
+msgstr ""
+
+#: flexslider-hg-init.php:13
+msgid "No Slide found in Trash"
+msgstr ""
+
+#: flexslider-hg-init.php:46 flexslider-hg.php:377
+msgid "Sliders"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "Slider"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "Add New"
+msgstr ""
+
+#: flexslider-hg-init.php:46 flexslider-hg.php:107
+msgid "Add New Slider"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "Edit Slider"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "New Slider"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "All Sliders"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "View Slider"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "Search Sliders"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "No sliders found"
+msgstr ""
+
+#: flexslider-hg-init.php:46
+msgid "No sliders found in Trash"
+msgstr ""
+
+#: flexslider-hg.php:285
+msgid "Slide Settings"
+msgstr ""
+
+#: flexslider-hg.php:298
+msgid "The URL this slide should link to:"
+msgstr ""
+
+#: flexslider-hg.php:305
+msgid "Attach to:"
+msgstr ""
+
+#: flexslider-hg.php:375
+msgid "Image"
+msgstr ""
+
+#: flexslider-hg.php:376
+msgid "Title"
+msgstr ""
+
+#: flexslider-hg.php:378
+msgid "Order"
+msgstr ""
+
+#: flexslider-hg.php:379
+msgid "Link"
+msgstr ""
+
+#: flexslider-hg.php:380
+msgid "Date"
+msgstr ""
+
+#: flexslider-hg.php:406
+msgid "Slider Title"
+msgstr ""
+
+#: flexslider-hg.php:407
+msgid "Shortcode"
+msgstr ""
+
+#: flexslider-hg.php:423
+msgid "Slider Settings"
+msgstr ""
+
+#: flexslider-hg.php:475
+msgid "Hide Title/Excerpt"
+msgstr ""
+
+#: flexslider-hg.php:480
+msgid "Randomize Slides"
+msgstr ""
+
+#: flexslider-hg.php:492
+msgid "Image Size"
+msgstr ""
+
+#: flexslider-hg.php:501
+msgid "Order By"
+msgstr ""
+
+#: flexslider-hg.php:506
+msgid "Ascending"
+msgstr ""
+
+#: flexslider-hg.php:507
+msgid "Decending"
+msgstr ""
+
+#: flexslider-hg.php:509
+msgid "Order Direction"
+msgstr ""
+
+#: flexslider-hg.php:514
+msgid "Fade"
+msgstr ""
+
+#: flexslider-hg.php:517
+msgid "Animation"
+msgstr ""
+
+#: flexslider-hg.php:522
+msgid "Horizontal"
+msgstr ""
+
+#: flexslider-hg.php:523
+msgid "Vertical"
+msgstr ""
+
+#: flexslider-hg.php:525
+msgid "Animation Direction"
+msgstr ""
+
+#: flexslider-hg.php:534
+msgid "Slideshow Speed (in seconds)"
+msgstr ""
+
+#: flexslider-hg.php:539
+msgid "Animation Speed (in seconds)"
+msgstr ""
+
+#: flexslider-hg.php:544
+msgid "Heading Tag"
+msgstr ""
+
+#: flexslider-hg.php:549
+msgid "Max Number of Slides"
+msgstr ""
+
+#: flexslider-hg.php:549
+msgid "0 for all slides"
+msgstr ""
+
+#: flexslider-hg.php:558
+msgid "Rounded Corners"
+msgstr ""
+
+#: flexslider-hg.php:561
+msgid "Square Corners"
+msgstr ""
+
+#: flexslider-hg.php:566
+msgid "Style"
+msgstr ""
+
+#: flexslider-hg.php:583
+msgid "or change this to your custom classname"
+msgstr ""
+
+#: flexslider-hg.php:598
+msgid "Enter Slider Name Here"
+msgstr ""
+
+#: flexslider-hg.php:615
+msgid "Donate"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "HG Slider"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://halgatewood.com/flexslider-hg"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A responsive image rotator plugin that easily creates WordPress slideshows."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Hal Gatewood"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://halgatewood.com"
+msgstr ""

@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Read me</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;Image Map HotSpot for WordPress&rdquo; Documentation by &ldquo;Sike&rdquo;</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;Image Map HotSpot for WordPress&rdquo;</h1>
+
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 12 Sep 2013<br>
+					Updated: 13 Feb 2014<br>
+					By: Sike<br>
+					<a href="http://codecanyon.net/user/sike">Contact</a><br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing. And I appreciate if you can rate my item in the download section of codecanyon, thanks!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#usage">Usage</a></li>
+			<li><a href="#source">source Folder</a></li>
+			<li><a href="#credits">Credits</a></li>
+			<li><a href="#features">Features</a></li>
+		</ol>
+
+		<hr>
+
+		<h3 id="usage"><strong>A) Installation and Usage</strong> - <a href="#toc">top</a></h3>
+		<h4>How to install.</h4>
+		<ol>
+			<li>
+				Unzip and upload the folder to the /wp-content/plugins/ directory, via FTP, or upload the zip directly via WordPress's built in plugin uploader.
+			</li>
+			<li>
+				Activate the Image Map HotSpot plugin through the 'Plugins' menu in WordPress
+				<img src="assets/images/active.png" alt="image" />
+			</li>
+		</ol>
+		<h4>How to use the HotSpot.</h4>
+		<ol>
+			<li>
+				In the front page of this plugin, you can view the available HotSpots you've created. Something like below:
+				<img src="assets/images/img1.jpg" alt="image" />
+			</li>
+			<li>The HotSpot edit page, you can add/update the image and pop-up tooltip here:
+				<img src="assets/images/img2.jpg" alt="image" />
+			</li>
+			<li>After save/publish the HotSpot, you can see the working preview on the above of the edit page. When the content is fine, you can copy the shortcode and put it in your post or page.
+				<img src="assets/images/img3.jpg" alt="image" />
+			</li>
+		</ol>
+		<h4>Some hint:</h4>
+		<ol>
+			<li>The default width of the Popover is <strong>236</strong>, leave it to blank (and will be 236) if you want to <strong>responsive</strong> feature. Otherwise you can customize any width as you like.</li>
+			<li>If you don't want the Popover just want the pin icon with a link, you'd better add the icon and update it's proper position and save first. Otherwise the icon link make you harder to drag and update it's position.</li>
+			<li>The Popover only support YouTube HTML5 video player right now. And it only works with the Browser which support HTML5. So this is just more like a experiment feature.<br />
+				First set the Popover support video to yes in the setting.<br />
+				<img src="assets/images/video.png" alt="video" /><br />
+				Then in the YouTube video page, get the iframe embed code. Add the <strong>html5=1</strong> query to it, and <strong>fs=0</strong> to disable the fullscreen button (just find the fullscreen doesn't work correctly in Lion).
+<pre>
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/ebXB0lBoaQ0?html5=1&amp;fs=0&quot;
+frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</pre>
+             After close/hide the Popover, the video will stop, and reload the video every time when display the Popover again.
+			</li>
+			<li>Want to put small image in the Popover?
+				You can embed the image via HTML, and add the <strong>popover-floatleft</strong> or <strong>popover-floatright</strong> to align the image. For example, this is the code for the small circle avatar in the preview.
+<pre>
+&lt;img src=&quot;http://wp.cq.com/wp-content/uploads/2013/10/avatar_80.png&quot;
+class=&quot;popover-floatright&quot; alt=&quot;avatar&quot; /&gt;
+There is only 2 weeks until the Envato LA and San Francisco Meetups!
+We want you to be there but space is limited.
+If you are interested you&#039;ll have to get in quick,
+please head to the Meetup Thread and RSVP. :)
+</pre>
+			</li>
+			<li>How to use your own custom pin icon?<br />
+			Scroll down in the setting area, add the 24x24 custom icon, it'll effect all the icons. Leave it to blank if you want use the prior built-in icon.
+			</li>
+		</ol>
+
+		<hr>
+
+ <h3 id="source"><strong>B) The source Folder</strong> - <a href="#toc">top</a></h3>
+
+		<p>
+			Contains the source code for this plugin, you can customize or add new function in the php file.
+		</p>
+
+	    <hr>
+		<h3 id="credits"><strong>C)Credits</strong> - <a href="#toc">top</a></h3>
+			 <p>jQuery http://jquery.com<br />
+			 	Icons: <br />
+			 	http://www.icojam.com <br />
+				http://jonasraskdesign.com <br />
+				http://www.graphicrating.com <br />
+				http://yummygum.com
+			 </p>
+
+		<hr>
+
+		<h3 id="features"><strong>D)Features:</strong> - <a href="#toc">top</a></h3>
+		<p>
+			<ul>
+			<li>Easy to install and setup with WordPress.</li>
+			<li>Different icons in same image.</li>
+			<li>Optional size and color of the Popover.</li>
+			<li>Pin icon support link only.</li>
+			<li>Optional label under the pin icon.</li>
+			<li>Optional drop in animation of pin icon, like map in iOS.</li>
+			<li>Compatible with latest jQuery(1.10.x) and latest WordPress.</li>
+			<li>Multiple HotSpot on same page.</li>
+			<li>Enqueue the js and css only when needed. Keep WordPress page size smaller.</li>
+			<li>You can add/edit the Image HotSpot without touching the code. Customize/update the image and text with WordPress backend.</li>
+			<li>CSS3 transition support, fade only on the older browser, like IE8.</li>
+			<li>Auto delay slideshow.</li>
+			<li>FAQ and source code are included in the package. Free update in the future.</li>
+			</ul>
+		</p>
+
+		<hr>
+
+
+		<p><a href="http://codecanyon.net/user/sike/follow" title="follow my files in codecanyon"><img src="assets/images/codecanyon.jpg" alt="follow" style="border:none" /></a> <a href="http://codecanyon.net/feeds/users/sike" title="rss"><img src="assets/images/rss.jpg" alt="rss" /></a><br />
+		</p>
+
+		<p class="append-bottom alt large"><strong><a href="http://codecanyon.net/user/sike">Sike</a></strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

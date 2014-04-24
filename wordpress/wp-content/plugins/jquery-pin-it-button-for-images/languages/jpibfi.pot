@@ -1,0 +1,386 @@
+# Copyright (C) 2013 jQuery Pin It Button For Images
+# This file is distributed under the same license as the jQuery Pin It Button For Images package.
+msgid ""
+msgstr ""
+"Project-Id-Version: jQuery Pin It Button For Images 1.14\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/jquery-pin-it-button-for-images\n"
+"POT-Creation-Date: 2013-10-29 07:52:19+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: jquery-pin-it-button-for-images.php:230
+#: jquery-pin-it-button-for-images.php:240
+#: jquery-pin-it-button-for-images.php:455
+msgid "Settings"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:259
+msgid "Disable \"Pin it\" button for this post (works only on single pages/posts)"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:468
+msgid "jQuery Pin It Button For Images Options"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:477
+msgid "Selection Settings"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:478
+msgid "Visual Settings"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:479
+#: jquery-pin-it-button-for-images.php:1193
+msgid "Advanced Settings"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:484
+msgid "If you would like to support development of the plugin, please %sdonate%s."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:485
+msgid "If you experience issues with the plugin, check out the %ssupport forum%s."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:486
+msgid "To help promote the plugin, %sleave a review%s."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:487
+msgid "If you have any suggestions for improvements, %suse the feedback form%s."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:552
+msgid "Selection"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:560
+msgid "Image selector"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:565
+msgid "jQuery selector for all the images that should have the \"Pin it\" button. Set the value to %s if you want the \"Pin it\" button to appear only on images in content or %s to appear on all images on site (including sidebar, header and footer). If you know a thing or two about jQuery, you might use your own selector. %sClick here%s to read about jQuery selectors."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:576
+#: jquery-pin-it-button-for-images.php:760
+msgid "Disabled classes"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:581
+msgid "Pictures with these CSS classes won't show the \"Pin it\" button. Please separate multiple classes with semicolons. Spaces are not accepted."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:587
+#: jquery-pin-it-button-for-images.php:762
+msgid "Enabled classes"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:592
+msgid "Only pictures with these CSS classes will show the \"Pin it\" button. Please separate multiple classes with semicolons. If this field is empty, images with any (besides disabled ones) classes will show the Pin It button."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:598
+msgid "On which pages the \"Pin it\" button should be shown"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:603
+msgid "Check on which pages you want the Pinterest button to show up."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:609
+msgid "Minimum resolution that should trigger the \"Pin it\" button to show up"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:614
+msgid "If you'd like the \"Pin it\" button to not show up on small images (e.g. social media icons), just set the appropriate values above. The default values cause the \"Pin it\" button to show on every eligible image."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:628
+msgid "Which images can be pinned"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:649
+#: jquery-pin-it-button-for-images.php:678
+msgid "No classes added."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:658
+#: jquery-pin-it-button-for-images.php:687
+msgid "Class name"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:660
+#: jquery-pin-it-button-for-images.php:689
+msgid "Add to list"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:710
+msgid "Home page"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:712
+msgid "Pages"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:714
+msgid "Single posts"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:716
+msgid "Category and archive pages"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:718
+msgid "Blog pages"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:732
+#: jquery-pin-it-button-for-images.php:1041
+msgid "Height"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:739
+#: jquery-pin-it-button-for-images.php:1048
+msgid "Width"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:767
+msgid "the given value doesn't meet the requirements. Please correct it and try again."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:777
+msgid "Minimum image height"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:779
+msgid "Minimum image width"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:784
+#: jquery-pin-it-button-for-images.php:1146
+msgid "value must be a number greater or equal to %d."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:850
+msgid "Visual"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:858
+msgid "Mode"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:863
+msgid "Static mode adds a layer on the top of the image that restricts image download, but works on websites that protect images download. Dynamic mode doesn't add that layer and allows image download. If you're experiencing issues with static mode, try using dynamic mode."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:869
+msgid "Description source"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:874
+msgid "From where the Pinterest message should be taken. Please note that \"Image description\" works properly only for images that were added to your Media Library."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:880
+msgid "Linked page"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:885
+msgid "When checked, the link on Pinterest will always point to the individual page with the image and title of this individual page will be used if you've selected Title as the description source, even when the image was pinned on an archive page, category page or homepage. If false, the link will point to the URL the user is currently on."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:891
+msgid "Transparency value"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:896
+msgid "This setting sets the transparency of the image."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:902
+msgid "Custom \"Pin It\" button"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:907
+msgid "Check the <b>Use custom image</b> checkbox, specify image's URL, height and width to use your own Pinterest button design. You can just upload an image using Wordpress media library if you wish."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:913
+msgid "\"Pin it\" button position"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:918
+msgid "Where the \"Pin it\" button should appear on the image."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:924
+msgid "\"Pin it\" button margins"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:929
+msgid "Margins are used to adjust the position of the \"Pin it\" button, but not all margins are used on all button positions. Here is an example. If you're using the \"%s\" position, the button's position will be affected only by top and left margins. Bottom and right margins affect \"%s\" position, etc. The \"%s\" position does not use any margins at all."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:930
+#: jquery-pin-it-button-for-images.php:1071
+msgid "Top left"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:931
+#: jquery-pin-it-button-for-images.php:1074
+msgid "Bottom right"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:932
+#: jquery-pin-it-button-for-images.php:1075
+msgid "Middle"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:939
+msgid "Retina friendly"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:944
+msgid "Please note that checking this option will result in rendering the \"Pin it\" button half of its normal size (if you use a 80x60 image, the button will be 40x30). When uploading a custom \"Pin it\" button (the default one is too small), please make sure both width and height are even numbers (i.e. divisible by two) when using this option."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:959
+msgid "How it should look like"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:969
+msgid "Static"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:970
+msgid "Dynamic"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:985
+msgid "Page title"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:986
+msgid "Page description"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:987
+msgid "Picture title or (if title not available) alt attribute"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:988
+msgid "Site title (Settings->General)"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:989
+msgid "Image description"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1002
+msgid "Always link to individual post page"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1012
+msgid "Choose transparency (between %.02f and %.02f)"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1030
+msgid "Use custom image"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1033
+msgid "Upload an image using media library"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1036
+msgid "URL address of the image"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1055
+msgid "Custom Pin It button preview"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1059
+msgid "Refresh preview"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1072
+msgid "Top right"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1073
+msgid "Bottom left"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1095
+msgid "Top"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1097
+msgid "Bottom"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1099
+msgid "Left"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1101
+msgid "Right"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1114
+msgid "Optimize for high pixel density displays"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1130
+msgid "Transparency value must be a number between %.02d and %.02f."
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1138
+msgid "Custom image height"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1140
+msgid "Custom image width"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1201
+msgid "Debug"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1206
+msgid "Use debug mode only if you are experiencing some issues with the plugin and you are reporting them to the developer of the plugin"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1219
+msgid "Advanced settings"
+msgstr ""
+
+#: jquery-pin-it-button-for-images.php:1231
+msgid "Enable debug mode"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "jQuery Pin It Button For Images"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://mrsztuczkens.me/jpibfi/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Highlights images on hover and adds a \"Pin It\" button over them for easy pinning."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Marcin Skrzypiec"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://mrsztuczkens.me/"
+msgstr ""
