@@ -48,7 +48,8 @@
                                 
                                 </div>
                         
-                    		<?php }?>           
+                    		<?php }?>     
+                            <a href="#collection" ><img src="http://www.deptofdecoration.com/wordpress/wp-content/uploads/2014/04/white_arrow-01.png" alt="white_arrow" id="show_hide_arrow" /></a>
                             
                         <div style="clear: both;"></div>
                         </li>                      

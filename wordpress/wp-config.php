@@ -1,4 +1,7 @@
 <?php
+
+
+
 /**
  * The base configurations of the WordPress.
  *
@@ -15,70 +18,23 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'wordpress');
+
+/** MySQL database username */
+define('DB_USER', 'root');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'root');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
-
-/********************
-PRODUCTION
-
-	// /** The name of the database for WordPress */
-	// define('DB_NAME', 'db63737_deptofdecoration');
-
-	// /** MySQL database username */
-	// define('DB_USER', 'db63737_decorWP');
-
-	// /** MySQL database password */
-	// define('DB_PASSWORD', 'd3partm3nt');
-
-	// /** MySQL hostname */
-	// define('DB_HOST', 'internal-db.s63737.gridserver.com');
-######################/
-
-if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
-	echo "LOAD LOCAL CONFIG<br>";
-	include( dirname( __FILE__ ) . '/local-config.php' );
-	define( 'WP_LOCAL_DEV', true ); // We'll talk about this later
-}
-echo "<br>AFTER LOCAL IMPORT";
- echo "<br>DB_NAME: ";
- echo DB_NAME . " <br>";
- echo "<br>DB_HOST: ";
- echo DB_HOST . " <br>";
- 
-/** The name of the database for WordPress. */
-if ( ! defined( 'DB_NAME' ) ) {
-	define( 'DB_NAME', '' );
-}
- 
-/** MySQL database username. */
-if ( ! defined( 'DB_USER' ) ) {
-	define( 'DB_USER', '' );
-}
- 
-/** MySQL database password. */
-if ( ! defined( 'DB_PASSWORD' ) ) {
-	define( 'DB_PASSWORD', '' );
-}
- 
-/** MySQL hostname. */
-if ( ! defined( 'DB_HOST' ) ) {
-	echo "FALL BACK DB_HOST: set to localhost<br>";
-	define( 'DB_HOST', 'localhost' );
-}
- 
-/** WordPress localized language. Defaults to 'en_EN'. */
-if ( ! defined( 'WPLANG' ) ) {
-	define( 'WPLANG', '' );
-}
- 
-/** WordPress debugging mode. */
-if ( ! defined( 'WP_DEBUG' ) ) {
-	define( 'WP_DEBUG', false );
-}
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -134,5 +90,4 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
-echo "LOAD SETTINGS";
 require_once(ABSPATH . 'wp-settings.php');

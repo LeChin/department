@@ -131,7 +131,7 @@ padding:0 0;
 #header{
 	padding:0 0 25px 0;
 	position: relative !important;
-	top: auto;
+	top: 0px !important;
 	left: auto;
 	margin:0;
 	float:left;
@@ -207,6 +207,8 @@ h2.singletitle{ font-size:40px;}
 
 }
 
+#footer{display:none;}
+
 /* Mobile */
 
 
@@ -260,6 +262,20 @@ padding: 0 !important;
 max-width: 290px;
 float:none;
 margin:0 auto 30px auto;
+}
+
+.fourcol .item_full{
+  border: 0px;
+  height: auto;
+}
+
+.fourcol .imgwrap{
+  background-color: white;
+}
+
+.fourcol .hover_box_info{
+  display: block !important;
+  left: 0px !important;
 }
 
 .sixcol{

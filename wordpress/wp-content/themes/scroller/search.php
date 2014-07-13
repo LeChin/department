@@ -2,7 +2,7 @@
 
 <div class="container container_block"> 
 
-    <div id="content" class="eightcol">
+    <div id="content" class="twelvecol">
 
 			<h2 class="itemtitle"><?php _e('Results for','themnific');?> "<?php echo $s; ?>"</h2>
 
@@ -32,21 +32,9 @@
                         
                         <h4><?php _e('Sorry, no posts matched your criteria.','themnific');?></h4>
                         
-           				<h4><?php _e('Perhaps You will find something interesting form these lists...','themnific');?></h4>
-                        
-            			<div class="hrline"></div>
-                        
-						<?php get_template_part('/includes/uni-404-content');?>
-                        
-                        
 					<?php endif; ?>
 
         </div><!-- end #homesingle-->
-
-        <div id="sidebar"  class="fourcol">
-               <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Sidebar") ) : ?>
-               <?php endif; ?>
-        </div><!-- #sidebar -->
         
    
 </div>

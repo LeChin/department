@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Used to set up and fix common variables and include
  * the WordPress procedural and class library.
@@ -62,8 +60,6 @@ timer_start();
 // Check if we're in WP_DEBUG mode.
 wp_debug_mode();
 
-
-
 // For an advanced caching plugin to use. Uses a static drop-in because you would only want one.
 if ( WP_CACHE )
 	WP_DEBUG ? include( WP_CONTENT_DIR . '/advanced-cache.php' ) : @include( WP_CONTENT_DIR . '/advanced-cache.php' );
@@ -80,7 +76,6 @@ require( ABSPATH . WPINC . '/plugin.php' );
 require( ABSPATH . WPINC . '/pomo/mo.php' );
 
 // Include the wpdb class and, if present, a db.php database drop-in.
-
 require_wp_db();
 
 // Set the database table prefix and the format specifiers for database table columns.

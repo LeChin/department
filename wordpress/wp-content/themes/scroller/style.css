@@ -198,7 +198,7 @@ h4.leading{
 #header{
 	width:100%;
 	padding:0;
-	position: fixed !important;
+	position: fixed;
 	overflow: visible;
 	top: 0;
 	left: 0;

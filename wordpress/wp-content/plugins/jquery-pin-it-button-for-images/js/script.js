@@ -350,7 +350,9 @@
 	$(document).ready( function() {
 		jpibfi.init( jpibfi_options );
 
+		$(document).trigger('jpibfi_beforeAddImages', {});
 		jpibfi.addImages( jpibfi_options.imageSelector );
+		$(document).trigger('jpibfi_afterAddImages', {});
 
 		$(window).load( function() {
 			jpibfi.prepareImages( $('img[data-jpibfi-indexer]') );

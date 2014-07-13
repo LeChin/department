@@ -323,10 +323,7 @@ function require_wp_db() {
 
 	if ( isset( $wpdb ) )
 		return;
-	echo "DB_USER:" . DB_USER . "</br>";
-	echo "DB_PASSWORD:" . DB_PASSWORD . "</br>";
-	echo "DB_NAME:" . DB_NAME . "</br>";
-	echo "DB_HOST:" . DB_HOST . "</br>";
+
 	$wpdb = new wpdb( DB_USER, DB_PASSWORD, DB_NAME, DB_HOST );
 }
 

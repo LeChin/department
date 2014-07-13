@@ -5,35 +5,25 @@
         <div id="copyright">
                 
             <div class="fl">
+                <i class="icon-search"></i><?php get_template_part('/includes/uni-searchformhead');?>
             </div>
         
         
-            <div class="fl">
-            
-				<?php if(get_option('themnific_footer_left') == 'true'){
-                    
-                    echo stripslashes(get_option('themnific_footer_left_text'));
-                    
-                } else { ?>
-        
-        			<p>&copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></p>
-                    
-                <?php } ?>
-                    
+            <div class="center_footer">
+              <ul id="footer_pages">
+                <li><?php echo do_shortcode("[link_popup id='220' link_text='Newsletter' name='Newsletter']"); ?></li>
+                <li><a href="http://www.deptofdecoration.com/faq/" title="faq">FAQ</a></li>
+                <li><a href="http://www.deptofdecoration.com/privacy/" title="privacy">Privacy Policy</a></li>
+                <li><a href="http://www.deptofdecoration.com/press/" title="Press">Press</a></li>
+              </ul>
             </div>
         
             <div class="fr">
-            
-				<?php if(get_option('themnific_footer_right') == 'true'){
-                    
-                    echo stripslashes(get_option('themnific_footer_right_text'));
-                    
-                } else { ?>
-                
-                    <p><?php _e('Powered by','themnific');?> <a href="http://www.wordpress.org">Wordpress</a>. <?php _e('Designed by','themnific');?> <a href="http://themnific.com">Themnific&trade;</a></p>
-                    
-                <?php } ?>
-                
+                <a href="http://www.pinterest.com/deptofdecor/" target="_blank" title="pinterest" class="pinterest social_icon"></a>
+                <a href="http://instagram.com/deptofdecoration" target="_blank" title="instagram" class="instagram social_icon"></a>
+                <a href="https://twitter.com/weshapespace" target="_blank" title="twitter" class="twitter social_icon"></a>
+                <a href="https://www.facebook.com/departmentofdecoration" target="_blank" title="facebook" class="facebook social_icon"></a>
+                <a href="mailto:?subject=<?php urlencode(the_title()) ?>&body=<?php urlencode(the_permalink()) ?>">Send via Email</a>
             </div>
                   
         </div> 

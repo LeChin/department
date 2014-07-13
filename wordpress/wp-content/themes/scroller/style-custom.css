@@ -21,58 +21,82 @@ Backup this file before theme update - so after update can be restored!
 
 .section_template h2 { color:#fff !important; text-shadow:1px 1px 0 #000}
 
-.container_block{padding-top:120px !important; margin-bottom:40px !important;}
+.container_block{padding-top:110px !important; margin-bottom:40px !important;}
 
-@font-face {
-  font-family: 'ScalaSansBoldUpcase';
-  src: url('font/ScalaSansScWebPro-Bold.eot'); /* IE9 Compat Modes */
-  src: url('font/ScalaSansScWebPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('font/ScalaSansScWebPro-Bold.woff') format('woff'), /* Modern Browsers */
-       url('font/ScalaSansScCompPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+.mainflex ul.slides>li{
+  background: white;
 }
 
-@font-face {
-  font-family: 'ScalaSansBold';
-  src: url('font/ScalaSansWebPro-Bold.eot'); /* IE9 Compat Modes */
-  src: url('font/ScalaSansWebPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('font/ScalaSansWebPro-Bold.woff') format('woff'), /* Modern Browsers */
-       url('font/ScalaSansCompPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+@font-face{ 
+	font-family: 'ScalaSansBoldUpcase';
+	src: url('font/scalasanssccomppro-bold-webfont.eot');
+	src: url('font/scalasanssccomppro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('font/scalasanssccomppro-bold-webfont.woff') format('woff'),
+	     url('font/scalasanssccomppro-bold-webfont.ttf') format('truetype'),
+	     url('font/scalasanssccomppro-bold-webfont.svg#webfont') format('svg');
 }
 
-@font-face {
-  font-family: 'ScalaSansRegularUpcase';
-  src: url('font/ScalaSansScWebPro.eot'); /* IE9 Compat Modes */
-  src: url('font/ScalaSansScWebPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('font/ScalaSansScWebPro.woff') format('woff'), /* Modern Browsers */
-       url('font/ScalaSansScCompPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+@font-face{ 
+	font-family: 'ScalaSansBold';
+	src: url('font/scalasanscomppro-bold-webfont.eot');
+	src: url('font/scalasanscomppro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('font/scalasanscomppro-bold-webfont.woff') format('woff'),
+	     url('font/scalasanscomppro-bold-webfont.ttf') format('truetype'),
+	     url('font/scalasanscomppro-bold-webfont.svg#webfont') format('svg');
 }
 
-@font-face {
-  font-family: 'ScalaSansRegular';
-  src: url('font/ScalaSansWebPro.eot'); /* IE9 Compat Modes */
-  src: url('font/ScalaSansWebPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('font/ScalaSansWebPro.woff') format('woff'), /* Modern Browsers */
-       url('font/ScalaSansCompPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+@font-face{ 
+	font-family: 'ScalaSansRegularUpcase';
+	src: url('font/scalasanssccomppro-webfont.eot');
+	src: url('font/scalasanssccomppro-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('font/scalasanssccomppro-webfont.woff') format('woff'),
+	     url('font/scalasanssccomppro-webfont.ttf') format('truetype'),
+	     url('font/scalasanssccomppro-webfont.svg#webfont') format('svg');
 }
 
-@font-face {
-  font-family: 'LetterwerkBold';
-  src: url('font/LetterwerkCarrosserieBold.otf')
+@font-face{ 
+	font-family: 'ScalaSansRegular';
+	src: url('font/scalasanscomppro-webfont.eot');
+	src: url('font/scalasanscomppro-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('font/scalasanscomppro-webfont.woff') format('woff'),
+	     url('font/scalasanscomppro-webfont.ttf') format('truetype'),
+	     url('font/scalasanscomppro-webfont.svg#webfont') format('svg');
 }
 
-@font-face {
-  font-family: 'LetterwerkRegular';
-  src: url('font/LetterwerkCarrosserieRegular.otf')
+@font-face{ 
+	font-family: 'LetterwerkBold';
+	src: url('font/letterwerk_-_carrosserie-bold-webfont.eot');
+	src: url('font/letterwerk_-_carrosserie-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('font/letterwerk_-_carrosserie-bold-webfont.woff') format('woff'),
+	     url('font/letterwerk_-_carrosserie-bold-webfont.ttf') format('truetype'),
+	     url('font/letterwerk_-_carrosserie-bold-webfont.svg#webfont') format('svg');
 }
 
-@font-face {
-  font-family: 'LetterwerkThin';
-  src: url('font/LetterwerkCarrosserieThin.otf')
+@font-face{ 
+	font-family: 'LetterwerkRegular';
+	src: url('font/letterwerk_-_carrosserie-regular-webfont.eot');
+	src: url('font/letterwerk_-_carrosserie-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('font/letterwerk_-_carrosserie-regular-webfont.woff') format('woff'),
+	     url('font/letterwerk_-_carrosserie-regular-webfont.ttf') format('truetype'),
+	     url('font/letterwerk_-_carrosserie-regular-webfont.svg#webfont') format('svg');
 }
 
-@font-face {
-  font-family: 'LetterwerkLight';
-  src: url('font/LetterwerkCarrosserieLight.otf')
+@font-face{ 
+	font-family: 'LetterwerkThin';
+	src: url('font/letterwerk_-_carrosserie-thin-webfont.eot');
+	src: url('font/letterwerk_-_carrosserie-thin-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('font/letterwerk_-_carrosserie-thin-webfont.woff') format('woff'),
+	     url('font/letterwerk_-_carrosserie-thin-webfont.ttf') format('truetype'),
+	     url('font/letterwerk_-_carrosserie-thin-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'LetterwerkLight';
+	src: url('font/letterwerk_-_carrosserie-light-webfont.eot');
+	src: url('font/letterwerk_-_carrosserie-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('font/letterwerk_-_carrosserie-light-webfont.woff') format('woff'),
+	     url('font/letterwerk_-_carrosserie-light-webfont.ttf') format('truetype'),
+	     url('font/letterwerk_-_carrosserie-light-webfont.svg#webfont') format('svg');
 }
 
 body{
@@ -80,20 +104,26 @@ body{
   color: #4d4d4d;
 }
 
-body.page #header, 
-body.single #header{
-  bottom: auto;
-  top: 0px;
+a:focus{
+  outline: 0px;
 }
 
 /* header and nav */
 
 #header{
-  top: auto;
-  bottom: 0px;
   background-image: none;
   box-shadow: none;
   background-color: #f0f2f2 !important;
+  position: relative;
+}
+
+.page #header, .single #header, .post #header, .search #header{
+  position: fixed;
+  top: 0px;
+}
+
+.home #header .container{
+  padding: 10px 0px;
 }
 
 #header .container{
@@ -101,8 +131,8 @@ body.single #header{
 }
 
 #logo_small{
-  width: 450px;
-  height: 27px !important;
+  width: 360px;
+  height: auto !important;
 }
 
 #navigation h1 a, #navigation h1 a:hover{
@@ -110,16 +140,61 @@ body.single #header{
   color: #4d4d4d !important;
 }
 
+#navigation h1{
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
 #nav li a, #main-nav a{
   font-family: 'LetterwerkLight', Helvetica, Arial, sans-serif;
-  font-size: 17px;
+  font-size: 1em;
   letter-spacing: 0.07em;
   color: #243644;
 }
 
-#nav li a:hover, #main-nav a:hover, #navigation a:hover, #main-nav .current-menu-item a, #nav .current-menu-item.current a{
-  font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif;
-  color: #243644 !important;
+#nav li.shopping_cart_nav{
+  display: none;
+}
+
+#main-nav li.shopping_cart_nav{
+  margin-top: 5px;
+}
+
+#main-nav li.shopping_cart_nav a{
+  display: inline;
+  width: auto;
+  height: auto;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-size: 1.3em;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+#main-nav li.shopping_cart_nav a:hover{
+  text-decoration: underline;
+}
+
+#main-nav li.shopping_cart_nav a:before{
+  content: "\f07a";
+}
+
+#navigation h1{
+  margin-top: 0.55em !important;
+}
+
+.bigmenu>.navi>li>a, .bigmenu>.scroll>li>a{
+  padding: 10px 20px 7px 20px;
+}
+
+#nav li a:hover, #main-nav a:hover, #navigation a:hover, #main-nav .current-menu-item a, #nav .current-menu-item.current a, a:hover, .entryfull a, .nav_item a:hover{
+  text-decoration: underline;
 }
 
 #navigation ul li a{
@@ -136,22 +211,14 @@ body.single #header{
 
 /* end */
 
+/* sticky header - homepage */
+
+/* end */
+
 /* product page secondary nav */
-
-h2.itemtitle{
-  font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif !important;
-  width: 100%;
-  text-align: center;
-  float: none;
-  margin-bottom: 100px;
-  font-weight: normal;
-  color: #243644;
-  letter-spacing: .03em !important;
-}
-
 .nav_item{
   position: fixed;
-  top: 65px;
+  top: 56px;
   left: 0px;
   width: 100%;
   margin: 0px;
@@ -159,7 +226,7 @@ h2.itemtitle{
   z-index: 100;
   text-align: center;
   background-color: white;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 1px solid #dddddd;
   color: #cccccc;
 }
 
@@ -198,8 +265,32 @@ h2.itemtitle{
   text-align: center;
 }
 
+#main #collection .container .tmnf-sc-box{
+  font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif !important;
+  border: 0px; background-color: white;
+  width: 70%;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 4.5em;
+  font-size: 1.3em;
+  white-space: normal;
+}
+
+#collection .container .loop{
+  margin-top: -5em;
+}
+
+#main #collection .container .tmnf-sc-box strong{
+  font-family: 'LetterwerkBold', Helvetica, Arial, sans-serif !important;
+  display: block;
+  text-transform: uppercase;
+  color: #243644;
+  font-size: .9em;
+  margin-bottom: .5em;
+}
+
 #main #collection .container .loop .rad_big{
-  margin-top: -135px;
+  margin-top: -115px;
   width: 100%;
 }
 
@@ -207,6 +298,8 @@ h2.itemtitle{
   float: none;
   overflow: visible;
   margin-top: -76px;
+  background-color: white;
+  border: 0px;
 }
 
 #main #collection .container .imgwrap a{
@@ -224,8 +317,54 @@ img.attachment-folio{
   height: auto;
 }
 
-.hoverstuff-zoom, .hoverstuff-link{
-  display: none !important;
+.item_full .hover_box_info{
+  display: none;
+  font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif !important;
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  opacity: .8;
+  z-index: 10;
+}
+
+.item_full{
+  border: 0px;
+}
+
+.item_full:hover .hover_box_info{
+  display: block;
+}
+
+.item_full .hover_box_info h3{
+  margin-top: -25px;
+  font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif !important;
+  font-size: 2em;
+}
+
+.item_full .hover_box_info h3{
+  white-space: normal;
+}
+
+.item_full .hover_box_info p{
+  width: 250px;
+  white-space: normal;
+  line-height: 1.3em;
+  font-size: 1.1em;
+  margin-top: -80px;
+  text-align: center;
+}
+
+.item_full .hover_box_info .portfolio-feature-link{
+  display: block;
+  width: 110px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin: 0 auto;
+  margin-top: -50px;
+  font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif;
 }
 
 /* end */
@@ -233,7 +372,6 @@ img.attachment-folio{
 /* product page */
 
 .container{
-  min-width: 1130px !important;
   max-width: 1130px !important;
 }
 
@@ -244,6 +382,7 @@ img.attachment-folio{
 #foliocontent{
   margin-bottom: 20px;
   width: 59%;
+  min-height: 300px;
 }
 
 .flex-control-paging{
@@ -252,53 +391,599 @@ img.attachment-folio{
   text-align: center;
 }
 
-#foliocontent .tmnf-sc-box{
+h2.itemtitle{
+  font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif !important;
+  width: 100%;
+  text-align: center;
+  float: none;
+  margin-bottom: 85px;
+  font-weight: normal;
+  color: #243644;
+  letter-spacing: .03em !important;
+  font-size: 2.8em;
+}
+
+.container .item_header{
   position: absolute;
-  top: 170px;
-  left: 10%;
+  top: 150px;
+  left: 23%;
+  width: 55%;
   border: 0px;
   background-color: white;
-  font-family: 'ScalaSans', Helvetica, Arial, sans-serif !important;
-  font-size: 1.3em;
+  font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif !important;
+  font-size: 1.2em;
   color: #243644;
   text-align: center;
+  line-height: 1.4em;
 }
 
 #item_content{
   width: 38%;
+  max-width: 350px;
   position: absolute;
-  top: 270px;
-  right: 0px;
-  font-family: 'ScalaSans', Helvetica, Arial, sans-serif !important;
+  top: 250px;
+  left: 700px;
+  font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif !important;
+  line-height: 1.5em;
 }
 
 #item_content strong{
-  font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif !important;
+  font-family: 'ScalaSansBold', Helvetica, Arial, sans-serif !important;
   color: #243644;
   text-transform: uppercase;
+}
+
+#item_content .tmnf-sc-box {
+  background-color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'ScalaSansBold', Helvetica, Arial, sans-seif;
+  letter-spacing: 0.17em;
+  border-width: 1px 0 1px 0;
 }
 
 .flex-control-nav li a {width: 16px; height: 20px; display: block; background:url(images/icons/bullets.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;opacity:1}
 .mainflex .flex-control-nav li a {background:url(images/icons/bullets.png)}
 
+.flex-control-paging{ margin: 7px 0px; }
+
 /* end */
 
+#push_up{
+  height: 10em;
+  background-color: white;
+}
+
 /* static pages */
+
+.entryfull{
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.entryfull ul{
+  margin-bottom: 20px;
+  font-family: "ScalaSansRegular", Helvetica, Arial, sans-serif;
+}
+
+.entryfull ul li{
+  list-style: circle;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.page-id-117 .entryfull, .page-id-194 .entryfull, .page-id-192 .entryfull, .page-id-196 .entryfull{
+  width: 60%;
+}
+
+.entryfull hr{
+  border-color: #dddddd;
+}
+
+.entryfull p{
+  font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif;
+}
+
+.entryfull strong, .entryfull b{
+  font-family: 'LetterwerkBold', Helvetica, Arial, sans-serif;
+  color: #243644;
+}
+
+.entryfull img.alignnone{
+  position: absolute;
+  top: -300px;
+  left: 42%;
+  z-index: 1000;
+}
+
+/* gatherings page */
+
+.entryfull img.aligncenter{
+  position: absolute;
+  top: -290px;
+  left: 48.9%;
+  z-index: 1000;
+}
+
+.entryfull .tmnf-sc-box{
+  position: absolute;
+  top: -263px;
+  width: 50%;
+  min-width: 300px;
+  left: 24.2%;
+  z-index: 1000;
+  background-color: #243644 !important;
+  color: #cccccc;
+  text-align: center;
+  font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  border: 0px;
+}
+
+.entryfull .tmnf-sc-box strong{
+  display: block;
+  font-family: 'LetterwerkLight', Helvetica, Arial, sans-serif;
+  color: #cccccc;
+
+}
+
+#gatherings_products_section{
+  display: inline-block;
+  background: #e3e3e3;
+  margin-top: 3em;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+#gatherings_products_section h3{
+  font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #243644;
+}
+
+#gatherings_products_section p.about{
+  width: 80%;
+  max-width: 590px;
+  min-width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+#gatherings_products_section #products_list{
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+#gatherings_products_section #products_list .twocol-one{
+  text-align: center;
+  border-top: 1px solid #dddddd;
+  font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif;
+  padding: 3px 0px;
+}
+
+#gatherings_products_section #products_list .twocol-one a:hover{
+  color: #243644;
+}
+/* end */
+
+/* search */
+
+.search #content.twelvecol{
+  width: 60%;
+  margin: 0 auto;
+  float: none;
+}
+
+.search #content.twelvecol h4{
+  text-align: center;
+}
+
+/* end */
 
 .section_template{
   background-color: #243644;
 }
 
 .section_template .container{
-  padding: 225px 2% 75px 2%;
+  padding: 305px 2% 75px 2%;
 }
 
-.section_template .container h2{
-  display: none;
+.container .heading{
+  margin-top: 3em;
+}
+
+.container .heading h2{
+  font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #243644;
+  font-size: 3em;
+}
+
+.container .heading p{
+  font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #footer{
-  position: fixed;
+  display: block;
+  position: relative;
   bottom: 0px;
   left: 0px;
+}
+
+.page #footer, .single #footer, .post #footer, .search #footer{
+  position: fixed;
+}
+
+#footer .container{
+  max-width: 95% !important;
+  margin: 0 auto;
+}
+
+#copyright .center_footer{
+  width: 360px;
+  margin: 0 auto;
+}
+
+#copyright .fr{
+  font-size: 1.4em;
+}
+
+#footer_pages li a{
+  letter-spacing: .09em;
+}
+
+#copyright .fr .social_icon{
+  float: left;
+  margin-right: 10px;
+  font-size: 1.4em;
+  background-image: url('http://www.deptofdecoration.com/wordpress/wp-content/uploads/2014/04/social.png');
+  width: 22px;
+  height: 22px;
+}
+
+#copyright .fr .social_icon.facebook:hover{
+  background-position: 0px 23px;
+}
+
+#copyright .fr .social_icon.pinterest{
+  background-position: 22px 0px;
+}
+
+#copyright .fr .social_icon.pinterest:hover{
+  background-position: 22px 22px;
+}
+
+#copyright .fr .social_icon.instagram{
+  background-position: 44px 0px;
+}
+
+#copyright .fr .social_icon.instagram:hover{
+  background-position: 44px 22px;
+}
+
+#copyright .fr .social_icon.twitter{
+  background-position: 66px 0px;
+}
+
+#copyright .fr .social_icon.twitter:hover{
+  background-position: 66px 22px;
+}
+
+#copyright .instaemail{
+  margin: 0px;
+  float: right;
+}
+
+#copyright #footer_pages li{
+  float: left;
+  margin-right: 20px;
+  font-size: 1.4em;
+}
+
+#copyright .fl form{
+  margin: 0px;
+  float: right;
+  width: 170px;
+  border: 0px;
+  padding: 1px;
+}
+
+#copyright .fl .icon-search{
+  float: left;
+  padding: 4px 6px;
+  line-height: 18px;
+  font-size: 1.2em;
+  background: rgb(231, 231, 231);
+}
+
+#copyright .fl form input{
+  padding: 4px;
+  color: #333;
+}
+
+#copyright .fl form input.searchSubmit{
+  display: none;
+}
+
+.single-myportfoliotype .attachment-folio_slider{
+  display: none;
+}
+
+#clientsbox{
+  margin: 40px 0px 0px 10px;
+}
+
+#clientsbox .clients{
+  height: auto;
+}
+
+#clientsbox li{
+  width: 23%;
+  text-align: center;
+  margin: 0px 1%;
+  margin-bottom: 1em;
+  color: #6B6B6B;
+  line-height: 1.4em;
+}
+
+#clientsbox li h3{
+  color: #243644;
+  font-family: 'LetterwerkBold', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#staff-wrap .warpbox{
+  width: 100%;
+}
+
+#staff-wrap li.staff{
+  width: auto;
+  float: none;
+  margin: 0px;
+  color: #333;
+}
+
+#staff-wrap li.staff h3{
+  color: #243644;
+  font-family: 'LetterwerkBold', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#show_hide_arrow{
+  width: auto;
+  height: 15px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  display: none;
+}
+
+/*iPad */
+
+@media screen and (max-width: 770px){
+  .container_block{
+    padding-top: 0px !important;
+  }
+  .fourcol .item_full{
+    min-height: 310px;
+    height: auto;
+  }
+  .hover_box_info{
+    top: 80px !important;
+    left: 150px !important;
+  }
+  #copyright .center_footer{
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  #copyright .fr{
+    float: left !important;
+  }
+  .entryfull{
+    width: 100%;
+  }
+  .nav_item{
+    position: relative;
+    top: auto;
+    margin-bottom: 3em;
+  }
+  .nav_item a{
+    display: inline-block;
+    width: 100%;
+  }
+  .nav_item a span{
+    width: 100%;
+    display: block;
+    float: left;
+  }
+  .nav_item .next_product{
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+  .nav_item .previous_product{
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  h2.itemtitle{
+    margin-bottom: 1em;
+  }
+  .container .item_header{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 4em;
+  }
+  #item_content{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .entryfull .aligncenter{
+    display: none;
+  }
+  .entryfull .tmnf-sc-box{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+  .hotspot-container{
+    width: 100%;
+    z-index: 9999;
+  }
+  .hotspot-container img.popover-image{
+    width: inherit;
+  }
+  #products_list{
+    width: 100% !important;
+  }
+  #foliocontent{
+    float: none;
+    width: 100%;
+  }
+}
+
+@media handheld, only screen and (max-width: 740px) {
+  .fourcol.rad_big{
+    height: 100%;
+  }
+  img.attachment-folio{
+    margin-top: 0px !important;
+  }
+  .fourcol.item_full{
+    height: 100%;
+    margin: 0px;
+  }
+  #main #collection .container .imgwrap{
+    min-height: 280px;
+  }
+  #main #collection .container .imgwrap a{
+    color: white;
+  }
+  .hover_box_info{
+    position: relative !important;
+    width: inherit !important;
+    margin-top: -175px !important;
+    top: auto !important;
+    left: auto !important;
+  }
+  .hover_box_info p{
+    width: inherit !important;
+  }
+  .hover_box_info h3{
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .container_block{
+    padding-top: 0px !important;
+  }
+  #footer{
+   position: relative !important;
+  }
+  #clientsbox{
+    margin: 0px;
+  }
+  #clientsbox li{
+    width: 100%;
+  }
+  #staff-wrap li.staff{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .entryfull{
+    width: 100%;
+  }
+  .nav_item{
+    position: relative;
+    top: auto;
+    margin-bottom: 3em;
+  }
+  .nav_item a{
+    display: inline-block;
+    width: 100%;
+  }
+  .nav_item a span{
+    width: 100%;
+    display: block;
+    float: left;
+  }
+  .nav_item .next_product{
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+  .nav_item .previous_product{
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  #foliocontent{
+    width: 100%;
+  }
+  h2.itemtitle{
+    margin-bottom: 1em;
+  }
+  .container .item_header{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 4em;
+  }
+  #item_content{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .entryfull .aligncenter{
+    display: none;
+  }
+  .entryfull .tmnf-sc-box{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+  .hotspot-container{
+    width: 100%;
+    z-index: 9999;
+  }
+  .hotspot-container img.popover-image{
+    width: inherit;
+  }
+  #products_list{
+    width: 100% !important;
+  }
 }

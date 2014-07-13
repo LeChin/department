@@ -3,8 +3,8 @@ Contributors: mrsztuczkens, redearthdesign, brocheafoin, robertark
 Donate link: http://bit.ly/Uw2mEP
 Tags: pinterest, pin it, button, image, images, pinit, social media, hover, click, photo, photos
 Requires at least: 3.3.0
-Tested up to: 3.6.1
-Stable tag: 1.31
+Tested up to: 3.9
+Stable tag: 1.33
 License: GPLv2 or later
 
 Highlights images on hover and adds a Pinterest "Pin It" button over them for easy pinning.
@@ -75,6 +75,14 @@ Please report them in the plugin's support forum on Wordpress.org.
 4. Pinterest pop-up window
 
 == Changelog ==
+
+= 1.33 =
+* Release 2014-05-18
+* Minor changes
+
+= 1.32 =
+* Release 2014-05-04
+* Minor fix
 
 = 1.31 =
 * Release 2014-03-13
@@ -197,6 +205,12 @@ Please report them in the plugin's support forum on Wordpress.org.
 * Feature: IE7 image highlight fix: using a transparent png instead of background-color
 
 == Upgrade Notice ==
+
+= 1.33 =
+Minor addition.
+
+= 1.32 =
+Minor fix.
 
 = 1.31 =
 Important fix.

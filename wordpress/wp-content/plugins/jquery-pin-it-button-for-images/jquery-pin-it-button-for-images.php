@@ -4,7 +4,7 @@ Plugin Name: jQuery Pin It Button For Images
 Plugin URI: http://mrsztuczkens.me/jpibfi/
 Description: Highlights images on hover and adds a "Pin It" button over them for easy pinning.
 Author: Marcin Skrzypiec
-Version: 1.31
+Version: 1.33
 Author URI: http://mrsztuczkens.me/
 */
 
@@ -47,7 +47,7 @@ if ( ! class_exists( 'jQuery_Pin_It_Button_For_Images' ) ) :
 			/* VERSIONING */
 			//plugin version
 			if ( ! defined( 'JPIBFI_VERSION' ) )
-				define( 'JPIBFI_VERSION', '1.31' );
+				define( 'JPIBFI_VERSION', '1.33' );
 
 			//used in versioning css and js files
 			if ( ! defined( 'JPIBFI_VERSION_MINOR' ) )

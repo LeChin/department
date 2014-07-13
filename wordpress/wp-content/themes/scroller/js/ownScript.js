@@ -134,25 +134,25 @@ jQuery(document).ready(function(){
 
 	/* wp gallery hover */	
 			
-	jQuery('.item_full,.item_carousel,.item_slider').hover(function() {
-		jQuery(this).find('a.hoverstuff-link,a.hoverstuff-zoom')
-			.animate({opacity: '1'}, 100); 
+	// jQuery('.item_full,.item_carousel,.item_slider').hover(function() {
+	// 	jQuery(this).find('a.hoverstuff-link,a.hoverstuff-zoom')
+	// 		.animate({opacity: '1'}, 100); 
 	
-		} , function() {
+	// 	} , function() {
 	
-		jQuery(this).find('a.hoverstuff-link,a.hoverstuff-zoom')
-			.animate({opacity: '0'}, 400); 
-	});
+	// 	jQuery(this).find('a.hoverstuff-link,a.hoverstuff-zoom')
+	// 		.animate({opacity: '0'}, 400); 
+	// });
 
-	jQuery('.item_full,.item_carousel,.format-image').hover(function() {
-		jQuery(this).find('img')
-			.animate({opacity: '.1'}, 100); 
+	// jQuery('.item_full,.item_carousel,.format-image').hover(function() {
+	// 	jQuery(this).find('img')
+	// 		.animate({opacity: '.1'}, 100); 
 	
-		} , function() {
+	// 	} , function() {
 	
-		jQuery(this).find('img')
-			.animate({opacity: '1'}, 400); 
-	});
+	// 	jQuery(this).find('img')
+	// 		.animate({opacity: '1'}, 400); 
+	// });
 
 
 
@@ -195,4 +195,89 @@ jQuery(document).ready(function(){
 		lightbox();
 	}
 
+
+	// Begin Custom Code - N Barrett
+	// sticky header
+
+	function stickHeaderAndFooter() {
+		var windowH = jQuery(window).height();
+	  var stickToBot = windowH - jQuery('#header').outerHeight(true);
+	  //outherHeight(true) will calculate with borders, paddings and margins.
+	  jQuery('.home #header').css({'top': stickToBot + 'px'});
+
+	  jQuery(window).scroll(function() {
+	    var scrollVal = jQuery(this).scrollTop();
+	    if ( scrollVal > stickToBot ) {
+	      jQuery('.home #header').css({'position':'fixed','top' :'0px','bottom':'auto'});
+	      jQuery('.home #footer').css({'position':'fixed','bottom' :'0px'});
+	    } else {
+	      jQuery('.home #header').css({'position':'absolute','top': stickToBot +'px'});
+	      jQuery('.home #footer').css({'position':'relative'});
+	    }
+	  });
+	}
+
+	function stickHeaderAndFooterResize() {
+		var windowH = jQuery(window).height();
+	  var stickToBot = windowH - jQuery('#header').outerHeight(true);
+	  //outherHeight(true) will calculate with borders, paddings and margins.
+	  jQuery('.home #header').css({'top': stickToBot + 'px'});
+
+	  jQuery(window).resize(function() {
+	    var scrollVal = jQuery(this).scrollTop();
+	    if ( scrollVal > stickToBot ) {
+	      jQuery('.home #header').css({'position':'fixed','top' :'0px','bottom':'auto'});
+	      jQuery('.home #footer').css({'position':'fixed','bottom' :'0px'});
+	    } else {
+	      jQuery('.home #header').css({'position':'absolute','top': stickToBot +'px'});
+	      jQuery('.home #footer').css({'position':'relative'});
+	    }
+	  });
+	}
+
+  jQuery("#show_hide_arrow").click(function() {
+  	jQuery(document.body).animate({
+    	'scrollTop': jQuery('#collection').offset().top
+		}, 2000);
+  });
+
+	stickHeaderAndFooter();
+
+	jQuery(window).resize(function(){	
+		stickHeaderAndFooter();
+		stickHeaderAndFooterResize();
+	});
+
+	var timeout = null;
+
+	jQuery(document).on('mousemove', function() {
+    if (timeout !== null) {
+        clearTimeout(timeout);
+    }
+
+    timeout = setTimeout(function() {
+      timeout = null;
+      console.log('Mouse idle for 3 sec');
+      jQuery('#show_hide_arrow').fadeIn();
+    }, 3000);
+	});
+
+	jQuery(document).on('ready', function() {
+    jQuery('#show_hide_arrow').delay('5000').fadeIn();
+		stickHeaderAndFooter();
+	});
+	
+	jQuery(document).on('scroll', function(){
+    jQuery('#show_hide_arrow').fadeOut();
+	});
+
+	// show/hide pin-it button
+	
+	jQuery('.soliloquy-item').on('mouseenter', function(){
+    jQuery(this).find('.soliloquy-pinterest-share').addClass('active');
+	});
+	
+	jQuery('.soliloquy-item').on('mouseleave', function(){
+    jQuery(this).find('.soliloquy-pinterest-share').removeClass('active');
+	});
 });

@@ -9,8 +9,8 @@ class JPIBFI_Client {
 		add_action( 'wp_enqueue_scripts', array( $this, 'add_plugin_scripts' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'add_plugin_styles' ) );
 		add_action( 'wp_head', array( $this, 'print_header_style' ) );
-		add_filter( "the_content", array( $this, 'prepare_the_content' ) );
-		add_filter( "the_excerpt", array( $this, 'prepare_the_content' ) );
+		add_filter( "the_content", array( $this, 'prepare_the_content' ), 9999 );
+		add_filter( "the_excerpt", array( $this, 'prepare_the_content' ), 9999 );
 	}
 
 	public static function get_instance() {

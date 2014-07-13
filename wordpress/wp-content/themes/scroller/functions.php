@@ -64,7 +64,9 @@ if (function_exists('add_theme_support')) {
 	add_image_size('block_2', 640, 400, true ); //(cropped)
 	add_image_size('format-image', 645, 9999);
 	add_image_size('format-single', 645, 300, true); //(cropped)
-	add_image_size('folio4', 208, 190, true ); //(cropped)
+	add_image_size('folio', 2000, 1000, true ); //(cropped)
+  // add_image_size('folio', 290, 280, true ); //(cropped)
+  add_image_size('folio4', 208, 190, true ); //(cropped)
 	add_image_size('folio_carousel', 281, 300, true ); //(cropped)
 	add_image_size('folio_slider', 662, 9999 ); //(cropped)
 	add_image_size('item_blog', 235, 150, true ); //(cropped)
