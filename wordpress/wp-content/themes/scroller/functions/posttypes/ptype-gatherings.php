@@ -1,8 +1,8 @@
 <?php 
 //Custom Post Types
-add_action('init', 'create_gathering');
-function create_gathering() {
-    $gathering_args = array(
+add_action('init', 'create_mygatheringtype');
+function create_mygatheringtype() {
+    $mygatheringtype_args = array(
         'label' => __('Gatherings','themnific'),
         'singular_label' => __('Gathering','themnific'),
         'public' => true,
@@ -26,13 +26,13 @@ function create_gathering() {
           'comments'
           )
        );
-  register_post_type( 'gathering' , $gathering_args );
+  register_post_type( 'mygatheringtype' , $mygatheringtype_args );
 }
   
 
 
 // Displays post image attachment (sizes: thumbnail, medium, full)
-function dp_attachment_image($postid=0, $size='Large', $attributes='title') {
+function dp_attachment_image6($postid=0, $size='Large', $attributes='title') {
   if ($postid<1) $postid = get_the_ID();
   if ($images = get_children(array(
     'post_parent' => $postid,
@@ -46,9 +46,9 @@ function dp_attachment_image($postid=0, $size='Large', $attributes='title') {
 }
   
 //Taxonomias
-register_taxonomy("categories", array("gathering"), array("hierarchical" => true, "label" => "Category", "singular_label" => "Category", "rewrite" => true));
+register_taxonomy("categories", array("mygatheringtype"), array("hierarchical" => true, "label" => "Category", "singular_label" => "Category", "rewrite" => true));
 register_taxonomy( 'tags', array("homepage"), array( 'hierarchical' => false, 'label' => 'Tags', 'query_var' => true, 'rewrite' => true ) );
-register_taxonomy( 'specifics', array("gathering"), array( 'hierarchical' => false, 'label' => 'Specifics', 'query_var' => true, 'rewrite' => true ) );
+register_taxonomy( 'specifics', array("mygatheringtype"), array( 'hierarchical' => false, 'label' => 'Specifics', 'query_var' => true, 'rewrite' => true ) );
 
 
 
@@ -59,7 +59,7 @@ $meta_boxes = array();
 $meta_boxes[] = array(
   'id' => 'my-meta-box-1',
   'title' => 'Video Options',
-  'pages' => array('gathering'), // multiple post types
+  'pages' => array('mygatheringtype'), // multiple post types
   'context' => 'normal',
   'priority' => 'high',
   'fields' => array(
@@ -87,7 +87,7 @@ $meta_boxes[] = array(
 $meta_boxes[] = array(
   'id' => 'my-meta-box-5',
   'title' => 'Project Options',
-  'pages' => array('gathering'), // multiple post types
+  'pages' => array('mygatheringtype'), // multiple post types
   'context' => 'normal',
   'priority' => 'high',
   'fields' => array(
@@ -116,10 +116,10 @@ $meta_boxes[] = array(
 
 
 foreach ($meta_boxes as $meta_box) {
-  $my_box = new My_meta_box($meta_box);
+  $my_box = new My_meta_box_gathering($meta_box);
 }
 
-class My_meta_box {
+class My_meta_box_gathering {
 
   protected $_meta_box;
 
@@ -261,12 +261,12 @@ class My_meta_box {
 }}
 
 
-add_filter('comment_form_default_fields', 'mytheme_remove_allowed_tags');
+// add_filter('comment_form_default_fields', 'mytheme_remove_allowed_tags');
    
-  function mytheme_remove_allowed_tags($arg) {
-      $arg['allowed_tags'] = '';
-      return $arg;
-}
+//   function mytheme_remove_allowed_tags($arg) {
+//       $arg['allowed_tags'] = '';
+//       return $arg;
+// }
 
 
 

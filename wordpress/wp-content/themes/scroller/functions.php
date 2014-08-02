@@ -23,7 +23,8 @@ require_once ($includes_path . 'theme-scripts.php'); 					// Load JavaScript via
 
 
 //Add Custom Post Types
-require_once ($includes_path . 'posttypes/ptype-portfolio.php'); 		// portfolio post type
+require_once ($includes_path . 'posttypes/ptype-portfolio.php');    // portfolio post type
+require_once ($includes_path . 'posttypes/ptype-gatherings.php'); 	// gatherings post type
 require_once ($includes_path . 'posttypes/ptype-layout.php'); 			// layout post type
 require_once ($includes_path . 'posttypes/ptype-slider.php'); 			// slider post type
 require_once ($includes_path . 'posttypes/ptype-services.php'); 		// services post type
