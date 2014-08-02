@@ -32,6 +32,7 @@ msgstr ""
 #: scroller/archive_alt.php:22
 #: scroller/archive.php:22
 #: scroller/template-portfolio.php:33
+#: scroller/template-gatherings.php:33
 #: scroller/functions/widgets/widget-blogauthor.php:89
 #: scroller/template-portfolio-4col.php:33
 #: scroller/index.php:23
@@ -371,6 +372,11 @@ msgstr ""
 #. Text in function
 #: scroller/functions/posttypes/ptype-portfolio.php:1
 msgid "Portfolio"
+msgstr ""
+
+#. Text in function
+#: scroller/functions/posttypes/ptype-gatherings.php:1
+msgid "Gatherings"
 msgstr ""
 
 #. Text in echo
