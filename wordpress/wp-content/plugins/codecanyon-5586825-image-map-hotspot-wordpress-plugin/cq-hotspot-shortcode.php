@@ -38,10 +38,13 @@
 						  </div>';
 
                             if($cq_hotspot_fields[0]['setting_arr']['cq_hotspot_customicon']!=""){
-								$output.='<a href="#" class="info-icon cq-hotspot-custom-icon" data-top="'.$field["text_top_prop"][$j].'" data-left="'.$field["text_left_prop"][$j].'" data-link="'.$field["popover_link_prop"][$j].'" data-target="'.$field["popover_target_prop"][$j].'" style="display:none;top:-1000px;"><br /><span class="cq-hotspot-label" style="">'.$field["popover_label_prop"][$j].'</span></a>';
+								$output.='<a href="#" class="info-icon cq-hotspot-custom-icon" data-top="'.$field["text_top_prop"][$j].'" data-left="'.$field["text_left_prop"][$j].'" data-link="'.$field["popover_link_prop"][$j].'" data-target="'.$field["popover_target_prop"][$j].'" style="display:none;top:-1000px;"><span class="cq-hotspot-label" style="">'.$field["popover_label_prop"][$j].'</span></a>';
                             }else{
-								$output.='<a href="#" class="info-icon '.$field["cq_hotspot_icon"][$j].'" data-top="'.$field["text_top_prop"][$j].'" data-left="'.$field["text_left_prop"][$j].'" data-link="'.$field["popover_link_prop"][$j].'" data-target="'.$field["popover_target_prop"][$j].'" style="display:none;top:-1000px;"><br /><span class="cq-hotspot-label" style="">'.$field["popover_label_prop"][$j].'</span></a>';
+								$output.='<a href="#" class="info-icon '.$field["cq_hotspot_icon"][$j].'" data-top="'.$field["text_top_prop"][$j].'" data-left="'.$field["text_left_prop"][$j].'" data-link="'.$field["popover_link_prop"][$j].'" data-target="'.$field["popover_target_prop"][$j].'" style="display:none;top:-1000px;"><span class="cq-hotspot-label" style="">'.$field["popover_label_prop"][$j].'</span></a>';
                             }
+
+			                if(!isset($cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor'])) $cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor'] = 'info-icon-pulse2';
+                            if(isset($field["popover_ispulse"])&&$field["popover_ispulse"][$j]=="yes") $output .= '<div class="info-icon-pulse '.$cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor'].'"></div>';
                 };
 
 				if($cq_hotspot_fields[0]["hotspot_img_url"]!=""||$cq_hotspot_fields["text_block"][0]!=""){

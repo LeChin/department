@@ -1,0 +1,20 @@
+02.06.2014 - ver 1.2.5
+   	- Add pulse animation option, you can choose the pulse border (black/white) in the setting too.
+   	- Make the popup item in the backend sortable, you can drag them to re-order. It's useful if the popup is in slideshow mode.
+
+14.02.2014 - ver 1.2.3
+   	- Update the pin position in responsive, make it more consistent and precise in small screen.
+
+02.01.2014 - ver 1.2.2
+   	- Add custom pin icon support, now you can add your own custom pin icon in the setting.
+
+20.10.2013 - ver 1.2
+	- Different icon for hotspot in same image.
+	- Optional popover size, background and color.
+	- Optional label under the icon.
+	- Icon drop in animation.
+	- Hyperlink with the icon.
+	- Experiment YouTube video popover.
+
+15.09.2013
+   - Created.

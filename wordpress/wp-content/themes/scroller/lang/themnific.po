@@ -623,6 +623,11 @@ msgid "Visit Project"
 msgstr ""
 
 #. Text in echo
+#: scroller/single-mygatheringtype.php:34
+msgid "Visit Gatherings"
+msgstr ""
+
+#. Text in echo
 #: scroller/author.php:21
 msgid "Website: "
 msgstr ""

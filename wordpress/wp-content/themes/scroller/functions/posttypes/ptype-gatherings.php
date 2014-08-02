@@ -46,10 +46,7 @@ function dp_attachment_image6($postid=0, $size='Large', $attributes='title') {
 }
   
 //Taxonomias
-register_taxonomy("categories", array("mygatheringtype"), array("hierarchical" => true, "label" => "Category", "singular_label" => "Category", "rewrite" => true));
 register_taxonomy( 'tags', array("homepage"), array( 'hierarchical' => false, 'label' => 'Tags', 'query_var' => true, 'rewrite' => true ) );
-register_taxonomy( 'specifics', array("mygatheringtype"), array( 'hierarchical' => false, 'label' => 'Specifics', 'query_var' => true, 'rewrite' => true ) );
-
 
 
 // Custom meta boxes
