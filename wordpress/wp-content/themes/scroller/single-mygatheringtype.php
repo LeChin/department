@@ -14,11 +14,10 @@ $attachments = get_children( array('post_parent' => get_the_ID(), 'post_type' =>
     
     <div class="nav_item">
         
-        <?php previous_post_link('%link', '<span class="previous_product">Previous Product</span>') ?>
+        <?php previous_post_link('%link', '<span class="previous_product">%title</span>') ?>
     
-      <!-- <a href="http://www.deptofdecoration.com/#collection"><span class="back_to_collection">Back to Collection</span></a> -->
         
-        <?php next_post_link('%link', '<span class="next_product">Next Product</span>') ?>
+        <?php next_post_link('%link', '<span class="next_product">%title</span>') ?>
   
     </div>
     
