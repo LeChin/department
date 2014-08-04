@@ -371,7 +371,8 @@ img.attachment-folio{
 
 /* product page */
 
-.container{
+.container,
+#gatherings_content{
   max-width: 1130px !important;
 }
 
@@ -501,74 +502,75 @@ h2.itemtitle{
 
 /* gatherings page */
 
-.entryfull img.aligncenter{
-  position: absolute;
-  top: -290px;
-  left: 48.9%;
-  z-index: 1000;
+.gatherings_header {
+  padding: 90px 0 50px 0;
+  background-color: #243644;
+  color: #cccccc;
 }
 
-.entryfull .tmnf-sc-box{
-  position: absolute;
-  top: -263px;
+.gatherings_header img.aligncenter{
+}
+
+.gatherings_header h2{
+  display: block;
+  font-family: 'LetterwerkLight', Helvetica, Arial, sans-serif;
+  color: #cccccc;
+  text-align: center;
+  font-size: 13px;
+}
+
+.gatherings_header .-content{
   width: 50%;
   min-width: 300px;
-  left: 24.2%;
-  z-index: 1000;
-  background-color: #243644 !important;
-  color: #cccccc;
+  margin: 0 auto;
   text-align: center;
   font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif;
   font-size: 1.1em;
   border: 0px;
 }
 
-.entryfull .tmnf-sc-box strong{
-  display: block;
-  font-family: 'LetterwerkLight', Helvetica, Arial, sans-serif;
-  color: #cccccc;
-
-}
-
-#gatherings_products_section{
+#gatherings_products{
   display: inline-block;
   background: #e3e3e3;
   margin-top: 3em;
+  margin-bottom: -4em;
   width: 100%;
-  padding: 20px 0px;
+  padding: 50px 0px;
 }
 
-#gatherings_products_section h3{
+#gatherings_products h3{
   font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif;
   font-size: 3em;
   text-align: center;
   color: #243644;
+  line-height: 1em;
 }
 
-#gatherings_products_section p.about{
-  width: 80%;
-  max-width: 590px;
-  min-width: 150px;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1.2em;
+#gatherings_products #products_list{
+  display: inline-block;
+  width: 100%;
 }
 
-#gatherings_products_section #products_list{
+#gatherings_products #products_list .-content{
   width: 800px;
   margin: 0 auto;
   margin-top: 2em;
   margin-bottom: 3em;
 }
 
-#gatherings_products_section #products_list .twocol-one{
+#gatherings_products #products_list a{
+  float: left;
+  margin-right: 2%;
+  position: relative;
+  min-height: 1px;
+  width: 48%;
   text-align: center;
   border-top: 1px solid #dddddd;
   font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif;
   padding: 3px 0px;
 }
 
-#gatherings_products_section #products_list .twocol-one a:hover{
+#gatherings_products_section #products_list a:hover{
   color: #243644;
 }
 /* end */
@@ -983,7 +985,7 @@ h2.itemtitle{
   .hotspot-container img.popover-image{
     width: inherit;
   }
-  #products_list{
+  #products_list, #gatherings_products #products_list .-content{
     width: 100% !important;
   }
 }

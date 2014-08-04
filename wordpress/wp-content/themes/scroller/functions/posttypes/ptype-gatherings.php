@@ -53,33 +53,6 @@ register_taxonomy( 'tags', array("homepage"), array( 'hierarchical' => false, 'l
 $prefix = 'themnific_';
 $meta_boxes = array();
 // first meta box
-$meta_boxes[] = array(
-  'id' => 'my-meta-box-1',
-  'title' => 'Video Options',
-  'pages' => array('mygatheringtype'), // multiple post types
-  'context' => 'normal',
-  'priority' => 'high',
-  'fields' => array(
-
-        array(
-            'name' => 'Video URL',
-            'desc' => 'Enter the url of the image or video, youtube url, vimeo, etc.',
-            'id' => $prefix. 'video_url',
-            'type' => 'text',
-            'std' => ''
-        ),
-
-        array(
-            'name' => 'Video Embed Code',
-            'desc' => 'Enter the embed video code. (662px width)',
-            'id' => $prefix. 'video_embed',
-            'type' => 'textarea',
-            'std' => ''
-        ),
-    
-  )
-);
-
 
 $meta_boxes[] = array(
   'id' => 'my-meta-box-5',
@@ -97,19 +70,17 @@ $meta_boxes[] = array(
             'type' => 'textarea',
             'std' => ''
         ),
-        
+
     array(
-            'name' => 'Project URL',
-            'desc' => 'This is the link for the project for example if you create a Web site then put the link here, you can leave this field empty if you want.',
-            'id' => $prefix . 'project_url',
-            'type' => 'text',
+            'name' => 'Products Section',
+            'desc' => 'Add products here',
+            'id' => $prefix . 'product_section',
+            'type' => 'textarea',
             'std' => ''
         ),
 
   )
 );
-
-
 
 
 foreach ($meta_boxes as $meta_box) {

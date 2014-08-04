@@ -2,7 +2,8 @@
 ********************************************************************************************
 ********************************************************************************************/
 
-.container {
+.container,
+#gatherings_content {
 width: 100%;
 max-width: 960px;
 margin: 0 auto;
@@ -383,7 +384,7 @@ li.scrollparent>a{ padding-left:12px !important;}
 
 a.hoverstuff-zoom{ display:none; visibility:hidden}
 
-.twocol-one,.threecol-one,.threecol-two,.fourcol-one,.fourcol-two,.fourcol-three,.fivecol-one,.fivecol-two,.fivecol-three,.fivecol-four,.sixcol-one,.sixcol-two,.sixcol-three,.sixcol-four,.sixcol-five{ width:100% !important;}
+.twocol-one,.threecol-one,.threecol-two,.fourcol-one,.fourcol-two,.fourcol-three,.fivecol-one,.fivecol-two,.fivecol-three,.fivecol-four,.sixcol-one,.sixcol-two,.sixcol-three,.sixcol-four,.sixcol-five, #gatherings_products #products_list a{ width:100% !important;}
 
 .section>.container>h2,
 h2.itemtitle{ font-size:30pt; letter-spacing:-2px; width:100%}
