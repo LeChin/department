@@ -295,7 +295,7 @@ a:focus{
   margin-bottom: 10em;
 }
 
-#main #collection .loop .homepage-collection-item {
+#main #collection .loop .collection-item-container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -372,6 +372,94 @@ a:focus{
   margin: 0 auto;
   font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif;
   margin-top: 1em;
+}
+
+/* end */
+
+/* archive section */
+
+#archive_posts {
+  width: 100%;
+  margin-bottom: 10em;
+}
+
+#archive_posts .loop {
+  width: 100%;
+}
+
+#archive_posts .loop .collection-item-container {
+  width: 48%;
+  height: 250px;
+  float: left;
+  list-style: none;
+  margin-bottom: 3em;
+}
+
+#archive_posts .loop .collection-item-container .collection-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#archive_posts .loop .collection-item-container .collection-item .imgwrap {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+#archive_posts .loop .collection-item-container .collection-item .imgwrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#archive_posts .loop .collection-item-container .collection-item .imgwrap a img {
+  height: auto;
+  width: 100%;
+}
+
+#archive_posts .loop .collection-item-container .collection-item .hover_box_info {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: .8;
+  z-index: 10;
+  font-family: 'ScalaSansRegular', Helvetica, Arial, sans-serif !important;
+  text-align: center;
+}
+
+#archive_posts .loop .collection-item .hover_box_info h3 {
+  font-family: 'LetterwerkThin', Helvetica, Arial, sans-serif !important;
+  font-size: 2em;
+  margin: 25px 25px 10px 25px;
+  white-space: normal;
+}
+
+#archive_posts .loop .collection-item .hover_box_info p{
+  width: 250px;
+  white-space: normal;
+  line-height: 1.3em;
+  font-size: 1.1em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#archive_posts .hover_box_info .portfolio-feature-link{
+  display: block;
+  width: 110px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin: 0 auto;
+  font-family: 'LetterwerkRegular', Helvetica, Arial, sans-serif;
+  margin-top: 1em;
+}
+
+#archive_posts .loop .collection-item-container .collection-item:hover .hover_box_info {
+  display: block;
 }
 
 /* end */

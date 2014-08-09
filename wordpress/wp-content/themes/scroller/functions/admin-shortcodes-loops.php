@@ -60,7 +60,7 @@ function tmnf_portfolio_featured($atts, $content = null) {
   <ul class="loop">
   <?php while ($wp_query->have_posts()) : $wp_query->the_post();?>
     
-      <li class="homepage-collection-item">
+      <li class="collection-item-container">
       <?php get_template_part('/includes/folio-types/folio-classic'); ?>
         </li>
             
