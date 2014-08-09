@@ -964,28 +964,28 @@ h2.itemtitle{
 }
 
 @media handheld, only screen and (max-width: 740px) {
-  .fourcol.rad_big{
-    height: 100%;
+  #main #collection .collection-item {
+    height: 100% !important;
   }
+
   img.attachment-folio{
     margin-top: 0px !important;
   }
-  .fourcol.item_full{
-    height: 100%;
-    margin: 0px;
-  }
+
   #main #collection .container .imgwrap{
     min-height: 280px;
   }
+
   #main #collection .container .imgwrap a{
     color: white;
   }
+
   .hover_box_info{
-    position: relative !important;
     width: inherit !important;
-    margin-top: -175px !important;
-    top: auto !important;
-    left: auto !important;
+    top: 0px !important;
+    bottom: auto !important;
+    left: 0px !important;
+    right: auto !important;
   }
   .hover_box_info p{
     width: inherit !important;
