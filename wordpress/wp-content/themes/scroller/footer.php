@@ -11,7 +11,6 @@
         
             <div class="center_footer">
               <ul id="footer_pages">
-                <li><?php echo do_shortcode("[link_popup id='220' link_text='Newsletter' name='Newsletter']"); ?></li>
                 <li><a href="http://www.deptofdecoration.com/faq/" title="faq">FAQ</a></li>
                 <li><a href="http://www.deptofdecoration.com/privacy/" title="privacy">Privacy Policy</a></li>
                 <li><a href="http://www.deptofdecoration.com/press/" title="Press">Press</a></li>

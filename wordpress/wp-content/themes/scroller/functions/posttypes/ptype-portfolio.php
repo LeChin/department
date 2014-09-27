@@ -2,20 +2,20 @@
 //Custom Post Types
 add_action('init', 'create_myportfoliotype');
 function create_myportfoliotype() {
-    $myportfoliotype_args = array(
-        'label' => __('Portfolio','themnific'),
-        'singular_label' => __('Portfolio','themnific'),
-        'public' => true,
-        'show_ui' => true,
+	$myportfoliotype_args = array(
+		'label' => __('Portfolio','themnific'),
+		'singular_label' => __('Portfolio','themnific'),
+		'public' => true,
+		'show_ui' => true,
 		'menu_position' => 100,
-        'capability_type' => 'post',
+		'capability_type' => 'post',
 		'menu_icon' => get_template_directory_uri() . '/functions/images/ptype.png',
-        'hierarchical' => false,
+		'hierarchical' => false,
 		'publicly_queryable' => true,
 		'query_var' => true,
-        'rewrite' => array( 'slug' => 'collections', 'with_front' => false ),
+		'rewrite' => array( 'slug' => 'collections', 'with_front' => false ),
 		'can_export' => true,
-        'supports' => array(
+		'supports' => array(
 			'title', 
 			'editor', 
 			'post-thumbnails',
@@ -25,7 +25,7 @@ function create_myportfoliotype() {
 			'thumbnail',
 			'comments'
 		  )
-       );
+	   );
   register_post_type('myportfoliotype',$myportfoliotype_args);
 }
 	
@@ -64,21 +64,21 @@ $meta_boxes[] = array(
 	'priority' => 'high',
 	'fields' => array(
 
-        array(
-            'name' => 'Video URL',
-            'desc' => 'Enter the url of the image or video, youtube url, vimeo, etc.',
-            'id' => $prefix. 'video_url',
-            'type' => 'text',
-            'std' => ''
-        ),
+		array(
+			'name' => 'Video URL',
+			'desc' => 'Enter the url of the image or video, youtube url, vimeo, etc.',
+			'id' => $prefix. 'video_url',
+			'type' => 'text',
+			'std' => ''
+		),
 
-        array(
-            'name' => 'Video Embed Code',
-            'desc' => 'Enter the embed video code. (662px width)',
-            'id' => $prefix. 'video_embed',
-            'type' => 'textarea',
-            'std' => ''
-        ),
+		array(
+			'name' => 'Video Embed Code',
+			'desc' => 'Enter the embed video code. (662px width)',
+			'id' => $prefix. 'video_embed',
+			'type' => 'textarea',
+			'std' => ''
+		),
 		
 	)
 );
@@ -94,20 +94,20 @@ $meta_boxes[] = array(
 		
 
 		array(
-            'name' => 'Project Description',
-            'desc' => 'Inser brief project info here.',
-            'id' => $prefix . 'project_description',
-            'type' => 'textarea',
-            'std' => ''
-        ),
-        
+			'name' => 'Project Description',
+			'desc' => 'Inser brief project info here.',
+			'id' => $prefix . 'project_description',
+			'type' => 'textarea',
+			'std' => ''
+		),
+		
 		array(
-            'name' => 'Project URL',
-            'desc' => 'This is the link for the project for example if you create a Web site then put the link here, you can leave this field empty if you want.',
-            'id' => $prefix . 'project_url',
-            'type' => 'text',
-            'std' => ''
-        ),
+			'name' => 'Project URL',
+			'desc' => 'This is the link for the project for example if you create a Web site then put the link here, you can leave this field empty if you want.',
+			'id' => $prefix . 'project_url',
+			'type' => 'text',
+			'std' => ''
+		),
 
 	)
 );
@@ -264,8 +264,8 @@ class My_meta_box {
 add_filter('comment_form_default_fields', 'mytheme_remove_allowed_tags');
 	 
 	function mytheme_remove_allowed_tags($arg) {
-	    $arg['allowed_tags'] = '';
-	    return $arg;
+		$arg['allowed_tags'] = '';
+		return $arg;
 }
 
 
