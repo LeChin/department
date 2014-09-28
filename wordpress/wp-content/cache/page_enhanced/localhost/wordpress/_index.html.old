@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Department of Decoration | Just another WordPress site</title>
+
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<link rel="pingback" href="http://localhost:8888/wordpress/xmlrpc.php" />
+
+<!-- Themnific Mobile & Special CSS -->
+<link href="http://fonts.googleapis.com/css?family=:|:|:|:|:|:|Arial:400|:"
+
+ rel="stylesheet" type="text/css">
+
+<link rel="alternate" type="application/rss+xml" title="Department of Decoration &raquo; Feed" href="http://localhost:8888/wordpress/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Department of Decoration &raquo; Comments Feed" href="http://localhost:8888/wordpress/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Department of Decoration &raquo; Home Comments Feed" href="http://localhost:8888/wordpress/home/feed/" />
+<link rel='stylesheet' id='style-css'  href='http://localhost:8888/wordpress/wp-content/themes/scroller-child/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='prettyPhoto-css'  href='http://localhost:8888/wordpress/wp-content/themes/scroller/styles/prettyPhoto.css' type='text/css' media='all' />
+<link rel='stylesheet' id='social-media-css'  href='http://localhost:8888/wordpress/wp-content/themes/scroller/styles/social-media.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome.min-css'  href='http://localhost:8888/wordpress/wp-content/themes/scroller/styles/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-ie7-css'  href='http://localhost:8888/wordpress/wp-content/themes/scroller/styles/font-awesome-ie7.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mobile-css'  href='http://localhost:8888/wordpress/wp-content/themes/scroller-child/style-mobile.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-custom-css'  href='http://localhost:8888/wordpress/wp-content/themes/scroller/style-custom.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-includes/js/jquery/ui/jquery.ui.core.min.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-includes/js/jquery/ui/jquery.ui.widget.min.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-includes/js/jquery/ui/jquery.ui.tabs.min.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/functions/js/shortcodes.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/css3-mediaqueries.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost:8888/wordpress/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost:8888/wordpress/wp-includes/wlwmanifest.xml" /> 
+<link rel='next' title='Press' href='http://localhost:8888/wordpress/press/' />
+<meta name="generator" content="WordPress 3.9.1" />
+<link rel='canonical' href='http://localhost:8888/wordpress/' />
+<link rel='shortlink' href='http://localhost:8888/wordpress/' />
+<!-- Themnific Shortcodes CSS -->
+<link href="http://localhost:8888/wordpress/wp-content/themes/scroller/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Themnific Styling -->
+<style type="text/css">
+body,.section,.item_full,.item_carousel,.item_slider,.pricing ul{background-color:#fff}
+.scroll li a,.navi li a{border-color:#fff !important}
+
+		.body2,#header,.scroll ul.sub-menu,.navi ul.sub-menu,.navi li ul.children
+		{background-color:#fff}
+.scroll li a,.navi li a{border-color:#fff !important}
+
+		.body3,.nav li ul,li.normal h2,ul.medpost li.format-quote
+		{background-color:#f9f9f9}
+#serinfo-nav li.current,.wpcf7-submit,a#navtrigger,.stuff span.slidebg,.flex-direction-nav li a,span.ribbon,.block-wrap a.blogmore,#folio-wrap a.blogmore,.imgwrap,a.hoverstuff-link,a.hoverstuff-zoom,li.main h2,.page-numbers.current,a.mainbutton,#submit,#comments .navigation a,.contact-form .submit,.plan-bottom a,a.comment-reply-link,.imageformat{background-color:#4DC8E3}
+.section>.container>h3,#servicesbox li,.nav li ul{border-color:#4DC8E3 !important}
+#navigation a:hover,.scroll>li.current>a,ul.sub-menu>li.current>a,ul.children>li.current>a,#servicesbox li:hover h3 i,#portfolio-filter li.current-cat a,.section>.container>h2:after{color:#4DC8E3 !important}
+.body1 a, a:link, a:visited,.nav>li>ul>li>a {color:#333}
+.entry a,a:hover,.body1 a:hover,#serinfo a:hover,#main-nav>li.current-cat a,#main-nav>li.current_page_item a,
+		#portfolio-filter a.current,li.current-cat a,#portfolio-filter li.active a,
+		.tagline a,a.slant {color:#4DC8E3}
+#main-nav>li:hover,#main-nav>li.current-cat,#main-nav>li.current_page_item {border-color:#4DC8E3 !important}
+#clients li,#header,#portfolio-filter,.searchform input.s,.fullbox,.pagination,input, textarea,input checkbox,input radio,select, file{border-color:#e3e3e3 !important}
+body,input, textarea,input checkbox,input radio,select, file {font:400 14px/1.8em Arial;color:#757575}
+.body2 h2,.body2 h3 {color:}
+p.special {font-family:}.tab-post small a,.taggs a,.ei-slider-thumbs li a {color:#757575}
+</style>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+</head>
+
+     
+<body class="home page page-id-6 page-template page-template-homepage_alt2-php upper">
+
+
+
+<div id="header" class="boxshadow gradient">
+
+	<div class="container" style="overflow:visible;"> 
+    
+        <a id="logo_res" href="http://localhost:8888/wordpress/">
+        
+            <img src="" alt="Department of Decoration"/>
+                
+        </a>
+    
+    	<a id="navtrigger" href="#">MENU</a>
+
+		   
+           
+           		<nav id="navigation" class="bigmenu">
+               
+                     <h1 class="classic">
+                    
+                         <a href="http://localhost:8888/wordpress/">Department of Decoration</a>
+                                
+                        	
+                    
+                    </h1>
+                    
+					<ul id="nav" class="scroll"><li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-30"><a href="http://localhost:8888/wordpress/">Home</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-52"><a href="http://localhost:8888/wordpress#collection">Collection</a></li>
+<li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-mygatheringtype menu-item-94"><a href="http://localhost:8888/wordpress/gatherings/bathroom-sub-title/">Gatherings</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="http://localhost:8888/wordpress/about/">About</a></li>
+<li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="http://localhost:8888/wordpress/archive/">Archive</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://localhost:8888/wordpress/stockists/">Stockists</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://localhost:8888/wordpress/contact-us/">Contact</a></li>
+</ul>
+			
+				</nav>
+					
+                            
+         	
+            
+	<div style="clear: both;"></div>
+            
+	</div>
+            
+</div>
+
+<div style="clear: both;"></div>        
+        
+   	<div id="home" class="mainflex_holder">
+
+			<div class="mainflex_wrap">
+            
+				                		<div class="mainflex flexslider">
+            
+                <ul class="slides">
+                
+					                                           
+                    
+                        <li class="free_slider">
+                        
+                        	                           
+                           		<div class="slider_full">
+                                
+                                	                                    
+                                    		<img width="1500" height="860" src="http://localhost:8888/wordpress/wp-content/uploads/2014/07/fullset7_homepage.jpg" class="attachment-full wp-post-image" alt="fullset7_homepage" />                                
+                                	    
+                                
+                                </div>
+                                
+                                <div class="free_content">
+                                
+                                	<div class="container">
+                                    
+                                		                                
+                                	</div>
+                                
+                                </div>
+                        
+                    		     
+                            <a href="#collection" ><img src="http://www.deptofdecoration.com/wordpress/wp-content/uploads/2014/04/white_arrow-01.png" alt="white_arrow" id="show_hide_arrow" /></a>
+                            
+                        <div style="clear: both;"></div>
+                        </li>                      
+                                        
+                </ul>
+                
+            </div>
+    
+                    
+            </div>
+
+	</div>
+
+	<div id="main">
+  
+            
+        
+    	                 
+      
+           <div id="collection" class="section resmode-Yes"
+           style="    ">
+           
+           
+           		
+				           
+            	<div class="container">
+                
+               		     
+                                      
+					<pre style="color: #000000;"><div class="tmnf-sc-box normal   "><strong>REVELATION </strong> Where tangible meets ephemeral..sss... <br />Beautifully crafted dining-ware inspired by the sea. </div>
+
+  <ul class="loop">
+      
+      <li class="collection-item-container">
+                             
+            <div class="collection-item">
+        
+                <div class="imgwrap">
+                
+                        
+                        <a href="http://localhost:8888/wordpress/collections/silverware/">
+                                
+                            <img width="600" height="400" src="http://localhost:8888/wordpress/wp-content/uploads/2014/07/pink-set-web1-600x400_c.jpg" class="attachment-folio wp-post-image" alt="pink-set-web1-600x400_c" title="" />                        
+                        </a>
+                        
+                </div>	
+                
+                <div style="clear:both"></div>
+    
+                <div class="hover_box_info">
+                    <h3><a href="http://localhost:8888/wordpress/collections/silverware/">Silverware</a></h3>
+                    
+                    <p>
+
+                        A fresh take on antique silverware....
+                     </p>
+                    
+                    <a class="portfolio-feature-link" href="http://localhost:8888/wordpress/collections/silverware/">See Item</a>
+                </div>
+    
+            </div>        </li>
+            
+      
+      <li class="collection-item-container">
+                             
+            <div class="collection-item">
+        
+                <div class="imgwrap">
+                
+                        
+                        <a href="http://localhost:8888/wordpress/collections/silver-trays-and-vessels/">
+                                
+                            <img width="1550" height="1000" src="http://localhost:8888/wordpress/wp-content/uploads/2014/07/trays-featuredimage-web-1550x1000.jpg" class="attachment-folio wp-post-image" alt="trays-featuredimage-web-1550x1000" title="" />                        
+                        </a>
+                        
+                </div>	
+                
+                <div style="clear:both"></div>
+    
+                <div class="hover_box_info">
+                    <h3><a href="http://localhost:8888/wordpress/collections/silver-trays-and-vessels/">Silver Trays and Vessels</a></h3>
+                    
+                    <p>
+
+                        One of a kind antique silver trays reimagined with color....
+                     </p>
+                    
+                    <a class="portfolio-feature-link" href="http://localhost:8888/wordpress/collections/silver-trays-and-vessels/">See Item</a>
+                </div>
+    
+            </div>        </li>
+            
+      
+      <li class="collection-item-container">
+                             
+            <div class="collection-item">
+        
+                <div class="imgwrap">
+                
+                        
+                        <a href="http://localhost:8888/wordpress/collections/feldspar-linens/">
+                                
+                            <img width="640" height="400" src="http://localhost:8888/wordpress/wp-content/uploads/2014/07/feldspar-napset-web-640x400.jpg" class="attachment-folio wp-post-image" alt="feldspar-napset-web-640x400" title="" />                        
+                        </a>
+                        
+                </div>	
+                
+                <div style="clear:both"></div>
+    
+                <div class="hover_box_info">
+                    <h3><a href="http://localhost:8888/wordpress/collections/feldspar-linens/">Feldspar Linens</a></h3>
+                    
+                    <p>
+
+                        Evoking the stone formation of sedimentary rock....
+                     </p>
+                    
+                    <a class="portfolio-feature-link" href="http://localhost:8888/wordpress/collections/feldspar-linens/">See Item</a>
+                </div>
+    
+            </div>        </li>
+            
+      
+      <li class="collection-item-container">
+                             
+            <div class="collection-item">
+        
+                <div class="imgwrap">
+                
+                        
+                        <a href="http://localhost:8888/wordpress/collections/finisterra-linens/">
+                                
+                            <img width="662" height="378" src="http://localhost:8888/wordpress/wp-content/uploads/2014/07/finsterra-nap-bunch-web-662x378.jpg" class="attachment-folio wp-post-image" alt="finsterra-nap-bunch-web-662x378" title="" />                        
+                        </a>
+                        
+                </div>	
+                
+                <div style="clear:both"></div>
+    
+                <div class="hover_box_info">
+                    <h3><a href="http://localhost:8888/wordpress/collections/finisterra-linens/">Finisterra Linens</a></h3>
+                    
+                    <p>
+
+                        A mythical place once thought to be the edge of the Earth....
+                     </p>
+                    
+                    <a class="portfolio-feature-link" href="http://localhost:8888/wordpress/collections/finisterra-linens/">See Item</a>
+                </div>
+    
+            </div>        </li>
+            
+      
+      <li class="collection-item-container">
+                             
+            <div class="collection-item">
+        
+                <div class="imgwrap">
+                
+                        
+                        <a href="http://localhost:8888/wordpress/collections/porcelain-plates/">
+                                
+                            <img width="600" height="400" src="http://localhost:8888/wordpress/wp-content/uploads/2014/07/dinner-plates-stacked-2-small-600x400_c.jpg" class="attachment-folio wp-post-image" alt="dinner-plates-stacked-2-small-600x400_c" title="" />                        
+                        </a>
+                        
+                </div>	
+                
+                <div style="clear:both"></div>
+    
+                <div class="hover_box_info">
+                    <h3><a href="http://localhost:8888/wordpress/collections/porcelain-plates/">Porcelain Plates</a></h3>
+                    
+                    <p>
+
+                        Versatile porcelain plates perfect for any meal....
+                     </p>
+                    
+                    <a class="portfolio-feature-link" href="http://localhost:8888/wordpress/collections/porcelain-plates/">See Item</a>
+                </div>
+    
+            </div>        </li>
+            
+      
+      <li class="collection-item-container">
+                             
+            <div class="collection-item">
+        
+                <div class="imgwrap">
+                
+                        
+                        <a href="http://localhost:8888/wordpress/collections/dining-room-revelation-set/">
+                                
+                            <img width="1500" height="860" src="http://localhost:8888/wordpress/wp-content/uploads/2014/07/fullset7_homepage.jpg" class="attachment-folio wp-post-image" alt="fullset7_homepage" title="" />                        
+                        </a>
+                        
+                </div>	
+                
+                <div style="clear:both"></div>
+    
+                <div class="hover_box_info">
+                    <h3><a href="http://localhost:8888/wordpress/collections/dining-room-revelation-set/">Dining Room: Revelation Set</a></h3>
+                    
+                    <p>
+
+                        Decorate your tabletop in one fell swoop....
+                     </p>
+                    
+                    <a class="portfolio-feature-link" href="http://localhost:8888/wordpress/collections/dining-room-revelation-set/">See Item</a>
+                </div>
+    
+            </div>        </li>
+            
+    </ul>
+        <div style="clear: both;"></div>
+  </pre>
+                        
+                        
+                    <div style="clear: both;"></div>
+                    
+                    </div>
+                        
+           		           
+           </div>
+            
+                    
+	</div><!-- [END] #main -->
+        
+<div id="footer" class="body3">
+
+	<div class="container">
+
+        <div id="copyright">
+                
+            <div class="fl">
+                <i class="icon-search"></i><form class="searchformhead" method="get" action="http://localhost:8888/wordpress">
+<input type="text" name="s" class="s" size="30" value="Search" onfocus="if (this.value = '') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" /><input type="submit" class="searchSubmit" value="" />
+</form>            </div>
+        
+        
+            <div class="center_footer">
+              <ul id="footer_pages">
+                <li><a href="http://www.deptofdecoration.com/faq/" title="faq">FAQ</a></li>
+                <li><a href="http://www.deptofdecoration.com/privacy/" title="privacy">Privacy Policy</a></li>
+                <li><a href="http://www.deptofdecoration.com/press/" title="Press">Press</a></li>
+              </ul>
+            </div>
+        
+            <div class="fr">
+                <a href="http://www.pinterest.com/deptofdecor/" target="_blank" title="pinterest" class="pinterest social_icon"></a>
+                <a href="http://instagram.com/deptofdecoration" target="_blank" title="instagram" class="instagram social_icon"></a>
+                <a href="https://twitter.com/weshapespace" target="_blank" title="twitter" class="twitter social_icon"></a>
+                <a href="https://www.facebook.com/departmentofdecoration" target="_blank" title="facebook" class="facebook social_icon"></a>
+                <a href="mailto:?subject=Home&body=http://localhost:8888/wordpress/">Send via Email</a>
+            </div>
+                  
+        </div> 
+    
+	</div>
+        
+</div><!-- /#footer  -->
+    
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/jquery.prettyPhoto.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/jquery.scrollTo.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/jquery.nav.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/jquery.parallax-1.1.3.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/superfish.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/ownScript.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/jquery.flexslider-min.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-content/themes/scroller/js/jquery.flexslider.start.main.js'></script>
+<script type='text/javascript' src='http://localhost:8888/wordpress/wp-includes/js/comment-reply.min.js'></script>
+
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+
+ Served from: localhost @ 2014-09-27 23:38:27 by W3 Total Cache -->
