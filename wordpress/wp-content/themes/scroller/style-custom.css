@@ -874,8 +874,26 @@ h2.itemtitle{
   #main #collection .collection-item-container .imgwrap,
   #archive_posts .loop .collection-item-container,
   #archive_posts .loop .collection-item-container .collection-item,
+  #archive_posts .loop .collection-item-container .collection-item .imgwrap,
   #archive_posts .loop .collection-item-container .collection-item .imgwrap a img {
     height: auto !important;
+  }
+
+  #archive_posts .loop .collection-item-container .collection-item .imgwrap a img {
+    width: 100% !important;
+  }
+
+  #archive_posts .loop .collection-item-container .collection-item .hover_box_info {
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    margin-top: auto !important;
+    margin-right: auto !important;
+    margin-bottom: auto !important;
+    margin-left: auto !important;
+    width: 300px !important;
+    height: 200px !important;
   }
 
   #archive_posts {
