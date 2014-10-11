@@ -469,6 +469,7 @@ a:focus{
 .container,
 #gatherings_content{
   max-width: 1130px !important;
+  z-index: 1;
 }
 
 .hrlineB, .hrline, .flex-direction-nav, #foliosidebar .meta, #menu-item-48{
@@ -907,9 +908,9 @@ h2.itemtitle{
     position: relative;
   }
 
-  .container_block{
-    padding-top: 0px !important;
-  }
+    .container_block{
+      padding-top: 140px !important;
+    }
 
   #copyright .center_footer{
     width: 100%;

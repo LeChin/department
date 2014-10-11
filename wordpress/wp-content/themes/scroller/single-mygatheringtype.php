@@ -10,7 +10,7 @@ $attachments = get_children( array('post_parent' => get_the_ID(), 'post_type' =>
 ?>
 
 <?php the_post(); ?>
-  
+
 <div class="gatherings_header">
   <div class="nav_item">
     <?php previous_post_link('%link', '<span class="previous_product">%title</span>') ?>
@@ -22,9 +22,11 @@ $attachments = get_children( array('post_parent' => get_the_ID(), 'post_type' =>
   <p class="-content"><?php echo $project_description; ?></p>
 </div>
 
-<div id="gatherings_content">
-  <div class="entryfull">
-    <?php the_content(); ?>
+<div class="container">
+  <div id="gatherings_content">
+    <div class="entryfull">
+      <?php the_content(); ?>
+    </div>
   </div>
 </div>
 
