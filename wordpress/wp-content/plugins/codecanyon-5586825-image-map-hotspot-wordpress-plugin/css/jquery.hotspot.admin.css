@@ -4,10 +4,12 @@ a:active{
 .wrap{
 	margin: 0;
 	padding: 0;
+  width: 100%;
 }
 .popover-amdin-container{
 	margin: 0;
 	padding: 0;
+  width: 100%;
 }
 .popover-amdin-container textarea{
 	width: 100%;
@@ -183,7 +185,7 @@ a:hover {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 1003;
   text-decoration: none;
 }
 .info-icon:hover{
@@ -1466,5 +1468,98 @@ h4.popover-title.pop-red{
   animation-delay: 3s;
   animation-timing-function: ease;
   animation-fill-mode: both;
+}
+
+.info-icon-pulse1, .info-icon-pulse2 {
+  /*background: rgba(0, 0, 0, 0.2);*/
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 16px 0px 0px 4px;
+  z-index: 1001;
+
+}
+.info-icon-pulse1:after{
+  /*background: rgba(0, 0, 0, 0.2);*/
+  content: "";
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin: -8px 0 0 -8px;
+  -webkit-animation: cq-hotspot-pulsate 1.2s ease-out;
+  animation: cq-hotspot-pulsate 1.2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  /*box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8);*/
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  /*border: 2px solid rgba(255, 255, 255, 0.8);*/
+}
+.info-icon-pulse2:after{
+  content: "";
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin: -8px 0 0 -8px;
+  -webkit-animation: cq-hotspot-pulsate 1.2s ease-out;
+  animation: cq-hotspot-pulsate 1.2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  /*box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);*/
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+
+
+@-webkit-keyframes cq-hotspot-pulsate {
+  0% {
+    -webkit-transform: rotateX(-64deg) scale(0.1, 0.1);
+    transform: rotateX(-64deg) scale(0.1, 0.1);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotateX(-64deg) scale(1.2, 1.2);
+    transform: rotateX(-64deg) scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+
+@keyframes cq-hotspot-pulsate {
+  0% {
+    -webkit-transform: rotateX(-64deg) scale(0.1, 0.1);
+    -ms-transform: rotateX(-64deg) scale(0.1, 0.1);
+    transform: rotateX(-64deg) scale(0.1, 0.1);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: rotateX(-64deg) scale(1, 1);
+    -ms-transform: rotateX(-64deg) scale(1, 1);
+    transform: rotateX(-64deg) scale(1, 1);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotateX(-64deg) scale(1.2, 1.2);
+    -ms-transform: rotateX(-64deg) scale(1.2, 1.2);
+    transform: rotateX(-64deg) scale(1.2, 1.2);
+    opacity: 0;
+  }
 }
 

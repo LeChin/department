@@ -6,7 +6,7 @@
                 $project_description = get_post_meta($post->ID, 'themnific_project_description', true);
             ?>
             
-            <div class="item_full item_height1">
+            <div class="collection-item">
         
                 <div class="imgwrap">
                 

@@ -1,5 +1,6 @@
 <?php
-
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
 
 
 /**
@@ -81,7 +82,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 

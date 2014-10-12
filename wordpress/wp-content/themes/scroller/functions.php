@@ -23,7 +23,8 @@ require_once ($includes_path . 'theme-scripts.php'); 					// Load JavaScript via
 
 
 //Add Custom Post Types
-require_once ($includes_path . 'posttypes/ptype-portfolio.php'); 		// portfolio post type
+require_once ($includes_path . 'posttypes/ptype-portfolio.php');		// portfolio post type
+require_once ($includes_path . 'posttypes/ptype-gatherings.php');		// gatherings post type
 require_once ($includes_path . 'posttypes/ptype-layout.php'); 			// layout post type
 require_once ($includes_path . 'posttypes/ptype-slider.php'); 			// slider post type
 require_once ($includes_path . 'posttypes/ptype-services.php'); 		// services post type
@@ -41,13 +42,13 @@ require_once ($includes_path . 'posttypes/post-metabox.php'); 			// custom meta 
 	if(!empty($preview_template)){
 		$widgets_dir = WP_CONTENT_DIR . "/themes/".$preview_template."/functions/widgets/";
 	} else {
-    	$widgets_dir = WP_CONTENT_DIR . "/themes/".get_option('template')."/functions/widgets/";
-    }
-    
-    if (@is_dir($widgets_dir)) {
+		$widgets_dir = WP_CONTENT_DIR . "/themes/".get_option('template')."/functions/widgets/";
+	}
+	
+	if (@is_dir($widgets_dir)) {
 		$widgets_dh = opendir($widgets_dir);
 		while (($widgets_file = readdir($widgets_dh)) !== false) {
-  	
+	
 			if(strpos($widgets_file,'.php') && $widgets_file != "widget-blank.php") {
 				include_once($widgets_dir . $widgets_file);
 			
@@ -108,6 +109,7 @@ require_once (get_template_directory().'/functions/admin-shortcodes-loops.php' )
 
 // Use shortcodes in text widgets.
 add_filter('widget_text', 'do_shortcode');
+add_filter('show_admin_bar', '__return_false');
 
 // navigation menu
 function register_main_menus() {
@@ -167,33 +169,33 @@ function tmnf_ribbon() {
 // managed excerpt
 
 function tmnf_excerptlength_teaser($length) {
-    return 90;
-    }
+	return 90;
+	}
 function tmnf_excerptlength_index($length) {
-    return 13;
-    }
+	return 13;
+	}
 function tmnf_excerptmore($more) {
-    return '...';
-    }
+	return '...';
+	}
 
 add_filter( 'wp_get_attachment_link', 'gallery_prettyPhoto');
 
 // new excerpt function
 
 function tmnf_excerpt($length_callback='', $more_callback='') {
-    global $post;
-    if(function_exists($length_callback)){
-    add_filter('excerpt_length', $length_callback);
-    }
-    if(function_exists($more_callback)){
-    add_filter('excerpt_more', $more_callback);
-    }
-    $output = get_the_excerpt();
-    $output = apply_filters('wptexturize', $output);
-    $output = apply_filters('convert_chars', $output);
-    $output = '<p>'.$output.'</p>';
-    echo $output;
-    }
+	global $post;
+	if(function_exists($length_callback)){
+	add_filter('excerpt_length', $length_callback);
+	}
+	if(function_exists($more_callback)){
+	add_filter('excerpt_more', $more_callback);
+	}
+	$output = get_the_excerpt();
+	$output = apply_filters('wptexturize', $output);
+	$output = apply_filters('convert_chars', $output);
+	$output = '<p>'.$output.'</p>';
+	echo $output;
+	}
 
 
 
@@ -226,7 +228,7 @@ function gallery_prettyPhoto ($content) {
 
 function insert_prettyPhoto_rel($content) {
 	$pattern = '/<a(.*?)href="(.*?).(bmp|gif|jpeg|jpg|png)"(.*?)>/i';
-  	$replacement = '<a$1href="$2.$3" rel=\'prettyPhoto\'$4>';
+	$replacement = '<a$1href="$2.$3" rel=\'prettyPhoto\'$4>';
 	$content = preg_replace( $pattern, $replacement, $content );
 	return $content;
 }
@@ -236,24 +238,24 @@ add_filter( 'the_content', 'insert_prettyPhoto_rel' );
 // pagination
 
 function pagination($prev = '&laquo;', $next = '&raquo;') {
-    global $wp_query, $wp_rewrite;
-    $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
-    $pagination = array(
-        'base' => @add_query_arg('paged','%#%'),
-        'format' => '',
-        'total' => $wp_query->max_num_pages,
-        'current' => $current,
-        'prev_text' => __('Previous','themnific'),
-        'next_text' => __('Next','themnific'),
-        'type' => 'plain'
+	global $wp_query, $wp_rewrite;
+	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+	$pagination = array(
+		'base' => @add_query_arg('paged','%#%'),
+		'format' => '',
+		'total' => $wp_query->max_num_pages,
+		'current' => $current,
+		'prev_text' => __('Previous','themnific'),
+		'next_text' => __('Next','themnific'),
+		'type' => 'plain'
 );
-    if( $wp_rewrite->using_permalinks() )
-        $pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
+	if( $wp_rewrite->using_permalinks() )
+		$pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
 
-    if( !empty($wp_query->query_vars['s']) )
-        $pagination['add_args'] = array( 's' => get_query_var( 's' ) );
+	if( !empty($wp_query->query_vars['s']) )
+		$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
 
-    echo paginate_links( $pagination );
+	echo paginate_links( $pagination );
 };
 
 
@@ -276,6 +278,7 @@ function the_breadcrumb() {
 	}
 }
 
-
+// Added this to fix headers not being set error on posttypes ptype-portfolio
+ob_start();
 
 ?>

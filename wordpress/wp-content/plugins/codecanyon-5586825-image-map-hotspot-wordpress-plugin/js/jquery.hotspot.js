@@ -479,6 +479,10 @@
 					top: Math.floor((_t)*_imgH/_containerH - 18*(_containerH-_imgH)/_containerH),
 					left: Math.floor((_l)*_imgW/_containerW - 10*(_containerW-_imgW)/_containerW)
 				});
+				$(this).next('.info-icon-pulse').css({
+					top: Math.floor((_t)*_imgH/_containerH - 18*(_containerH-_imgH)/_containerH),
+					left: Math.floor((_l)*_imgW/_containerW - 10*(_containerW-_imgW)/_containerW)
+				});
 				// var _label = $(this).next('.cq-hotspot-label');
 				var _label = $(this).find('.cq-hotspot-label');
 				if(_label){

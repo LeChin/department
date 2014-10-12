@@ -2,7 +2,8 @@
 ********************************************************************************************
 ********************************************************************************************/
 
-.container {
+.container,
+#gatherings_content {
 width: 100%;
 max-width: 960px;
 margin: 0 auto;
@@ -104,6 +105,10 @@ width:auto;
 margin: 0 20px;
 padding:0 0;
 }
+
+/*.gatherings_header {
+padding: 50px 0px 50px 0px !important;
+}*/
 	
 }
 
@@ -156,6 +161,10 @@ padding:0 0;
 .logo_bottom img{ height:70px;}
 
 #navigation h1{ margin:20px 0 5px 0; display:block !important; position:relative; top:auto; opacity:1; overflow:hidden; height:34px !important; float:left;}
+
+.gatherings_header{
+padding: 0px 0 50px 0 !important;
+}
 
 h2.head,
 p.section_text{ width:100% !important; padding:10px 0 !important; background: none !important;}
@@ -383,7 +392,7 @@ li.scrollparent>a{ padding-left:12px !important;}
 
 a.hoverstuff-zoom{ display:none; visibility:hidden}
 
-.twocol-one,.threecol-one,.threecol-two,.fourcol-one,.fourcol-two,.fourcol-three,.fivecol-one,.fivecol-two,.fivecol-three,.fivecol-four,.sixcol-one,.sixcol-two,.sixcol-three,.sixcol-four,.sixcol-five{ width:100% !important;}
+.twocol-one,.threecol-one,.threecol-two,.fourcol-one,.fourcol-two,.fourcol-three,.fivecol-one,.fivecol-two,.fivecol-three,.fivecol-four,.sixcol-one,.sixcol-two,.sixcol-three,.sixcol-four,.sixcol-five, #gatherings_products #products_list a{ width:100% !important;}
 
 .section>.container>h2,
 h2.itemtitle{ font-size:30pt; letter-spacing:-2px; width:100%}
@@ -454,9 +463,16 @@ img.alignleft,
 .attachment-folio_slider,
 .main-single,
 img.alignright,
-img.aligncenter,
 .wp-caption,
 .wp-caption img{ width:100%; margin:5px 0 30px 0;}
+
+.gatherings_header{
+padding:0px 0 50px 0 !important;
+}
+
+.gatherings_header .nav_item {
+border:0px !important;
+}
 
 } 
 

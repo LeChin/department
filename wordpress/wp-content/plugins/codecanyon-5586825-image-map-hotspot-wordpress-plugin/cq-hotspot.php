@@ -4,7 +4,7 @@
     Description: The Image Map HotSpot plugin help you to display annotation and tooltip with image in your WordPress.
     Author: Sike
     Author URI: http://codecanyon.net/user/sike?ref=sike
-    Version: 1.2.3
+    Version: 1.2.5
 */
 
 class CQ_HotSpot {
@@ -124,6 +124,9 @@ class CQ_HotSpot {
                             }else{
                                 $output.='<a href="#" class="info-icon '.$field["cq_hotspot_icon"][$j].'" data-top="'.$field["text_top_prop"][$j].'" data-left="'.$field["text_left_prop"][$j].'" data-link="'.$field["popover_link_prop"][$j].'" data-target="'.$field["popover_target_prop"][$j].'"><br /><span class="cq-hotspot-label" style="visibility:hidden;">'.$field["popover_label_prop"][$j].'</span></a>';
                             }
+
+                            if(!isset($cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor'])) $cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor'] = 'info-icon-pulse2';
+                            if(isset($field["popover_ispulse"])&&$field["popover_ispulse"][$j]=="yes") $output .= '<div class="info-icon-pulse '.$cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor'].'"></div>';
                     };
 
                 };
@@ -187,6 +190,14 @@ class CQ_HotSpot {
                     $output.='<tr><td width="36%">Popover support video: </td><td><input type="radio" name="cq_hotspot_displayvideo" value="true">yes <input type="radio" name="cq_hotspot_displayvideo" value="false" checked="checked">no <span class="input-label">only support YouTube HTML5 embed player right now</span></td></tr>';
 
                 }
+                if(!isset($cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor'])) $cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor'] = 'info-icon-pulse2';
+                if($cq_hotspot_fields[0]['setting_arr']['cq_hotspot_pulsecolor']=="info-icon-pulse1"){
+                    $output.='<tr><td width="36%">Pulse animation border color: </td><td><input type="radio" name="cq_hotspot_pulsecolor" value="info-icon-pulse1" checked="checked">white <input type="radio" name="cq_hotspot_pulsecolor" value="info-icon-pulse2">black </td></tr>';
+                }else{
+                    $output.='<tr><td width="36%">Pulse animation border color: </td><td><input type="radio" name="cq_hotspot_pulsecolor" value="info-icon-pulse1">white <input type="radio" name="cq_hotspot_pulsecolor" value="info-icon-pulse2" checked="checked">black </td></tr>';
+
+                }
+
                 $output.='<tr><td width="36%">Custom pin icon (24x24, globally): </td><td><input type="text" class="customicon-input widefat" name="cq_hotspot_customicon" data-name="cq_hotspot_customicon" value="'.$cq_hotspot_fields[0]['setting_arr']["cq_hotspot_customicon"].'" />';
                 $output.= '<a class="upload_custom_icon button" href="#">Choose Icon</a></td></tr>';
                 /*
@@ -207,6 +218,7 @@ class CQ_HotSpot {
                    $output.='<tr><td width="36%">Close the Popover when click the image: </td><td><input type="radio" name="cq_hotspot_clickimageclose" value="true" checked="checked">yes <input type="radio" name="cq_hotspot_clickimageclose" value="false">no</td></tr>';
                    $output.='<tr><td width="36%">Icon drop in animation: </td><td><input type="radio" name="cq_hotspot_dropinease" value="true" checked="checked">yes <input type="radio" name="cq_hotspot_dropinease" value="false">no</td></tr>';
                    $output.='<tr><td width="36%">Popover support video: </td><td><input type="radio" name="cq_hotspot_displayvideo">yes <input type="radio" name="cq_hotspot_displayvideo" value="false" checked="checked">no</td></tr>';
+                   $output.='<tr><td width="36%">Pulse border color: </td><td><input type="radio" name="cq_hotspot_pulsecolor" value="info-icon-pulse1">white <input type="radio" name="cq_hotspot_pulsecolor" value="info-icon-pulse2" checked="checked">black</td></tr>';
                    // $output.='<tr><td width="36%">Select the Popover icon: </td><td><input type="radio" name="cq_hotspot_arrowstyle" value="icon1" checked="checked"><img class="popover-icon" src="'.plugins_url( 'img/icon1.png' , __FILE__ ).'" /> <input type="radio" name="cq_hotspot_arrowstyle" value="icon2"> <img class="popover-icon" src="'.plugins_url( 'img/icon2.png' , __FILE__ ).'" /></td></tr>';
                    $output.='<tr><td width="36%">Custom pin icon (24x24, globally): </td><td><input type="text" class="customicon-input widefat" name="cq_hotspot_customicon" data-name="cq_hotspot_customicon" value="" />';
                    $output.= '<a class="upload_custom_icon button" href="#">Choose Icon</a></td></tr>';
@@ -307,6 +319,16 @@ class CQ_HotSpot {
                     'value' => '_blank'
                 )
             );
+            $popover_ispulse_arr = array(
+                array(
+                    'text' => 'no',
+                    'value' => 'no'
+                ),
+                array(
+                    'text' => 'yes',
+                    'value' => 'yes'
+                )
+            );
 
             global $cq_hotspot_fields, $post;
             $cq_hotspot_fields = get_post_meta($post->ID, 'cq_hotspot_fields', true);
@@ -314,7 +336,7 @@ class CQ_HotSpot {
             $output = '<input type="hidden" name="cq_hotspot_setting" value="'. wp_create_nonce(basename(__FILE__)). '" />';
             $output.= '<div class="wrap"><div class="hotspot-admin-container" style="">';
             if ( $cq_hotspot_fields ){
-                $output.= 'image:<br /><input type="text" class="popover-image-input widefat" name="hotspot_img_url" data-name="hotspot_img_url" value="'.$cq_hotspot_fields[0]["hotspot_img_url"].'" />';
+                $output.= 'Image:<br /><input type="text" class="popover-image-input widefat" name="hotspot_img_url" data-name="hotspot_img_url" value="'.$cq_hotspot_fields[0]["hotspot_img_url"].'" />';
                 $output.= '<a class="upload_image button" href="#">Choose Image </a><br /><br />';
                 foreach ( $cq_hotspot_fields as $field ) {
                     $output.= '<div class="popover-container">';
@@ -360,6 +382,23 @@ class CQ_HotSpot {
                                  . ( $field["popover_target_prop"][$j] == $popover_target_prop_arr[$i]['value'] ? 'selected="selected"' : '' ) . ' value="'.$popover_target_prop_arr[$i]['value'].'">'
                                  . $popover_target_prop_arr[$i]['text']
                                  . '</option>';
+                        }
+                        $output.='</select>';
+                        $output.='pulse animation:<select name="popover_ispulse" data-name="popover_ispulse">';
+                        if(isset($field["popover_ispulse"])){
+                            for( $i=0; $i<count($popover_ispulse_arr); $i++ ) {
+                                $output .= '<option '
+                                     . ( $field["popover_ispulse"][$j] == $popover_ispulse_arr[$i]['value'] ? 'selected="selected"' : '' ) . ' value="'.$popover_ispulse_arr[$i]['value'].'">'
+                                     . $popover_ispulse_arr[$i]['text']
+                                     . '</option>';
+                            }
+                        }else{
+                            for( $i=0; $i<count($popover_ispulse_arr); $i++ ) {
+                                $output .= '<option '
+                                     . ( 'no' == $popover_ispulse_arr[$i]['value'] ? 'selected="selected"' : '' ) . ' value="'.$popover_ispulse_arr[$i]['value'].'">'
+                                     . $popover_ispulse_arr[$i]['text']
+                                     . '</option>';
+                            }
                         }
                         $output.='</select>';
                         $output.='<br /><span class="update-note">Note: You can drag the icon in the preview to update it\'s position. Update position first, specify the icon link (if any) after saving.</span>';
@@ -421,6 +460,14 @@ class CQ_HotSpot {
                                  . '</option>';
                         }
                         $output.='</select>';
+                        $output.='pulse:<select name="popover_ispulse" data-name="popover_ispulse">';
+                        for( $i=0; $i<count($popover_ispulse_arr); $i++ ) {
+                            $output .= '<option '
+                                 . ( '_self' == $popover_ispulse_arr[$i]['value'] ? 'selected="selected"' : '' ) . ' value="'.$popover_ispulse_arr[$i]['value'].'">'
+                                 . $popover_ispulse_arr[$i]['text']
+                                 . '</option>';
+                        }
+                        $output.='</select>';
                         $output.='<br /><span class="update-note">Note: You can drag the label in the preview to update it\'s position.</span>
                                     <a class="remove-popover" href="#" title="remove this text"></a>
                                 </div>
@@ -429,7 +476,7 @@ class CQ_HotSpot {
                 ';
             }
             $output.='<br /><div class="hint-border"><p>How to use:</p>';
-            $output.='<p><strong>Step 1</strong>, choose an image and save. <strong>Step 2</strong>, drag the icon above the image, add the content, don\'t forget to save again.</p></div>';
+            $output.='<p><strong>Step 1</strong>, choose an image and save. <br /><strong>Step 2</strong>, drag the icon above the image, add the content, don\'t forget to save again.</p></div>';
             $output.='<p>Icon Reference:</p><p id="available-icons" class="available-icons"><span class="available-icon-con">icon 1 <img class="popover-icon" src="'.plugins_url( 'img/icon1.png' , __FILE__ ).'" /></span> <span class="available-icon-con">icon 2 <img class="popover-icon" src="'.plugins_url( 'img/icon2.png' , __FILE__ ).'" /></span> <span class="available-icon-con">icon 3 <img class="popover-icon" src="'.plugins_url( 'img/icon3.png' , __FILE__ ).'" /></span> <span class="available-icon-con">icon 4 <img class="popover-icon" src="'.plugins_url( 'img/icon4.png' , __FILE__ ).'" /></span> <span class="available-icon-con">icon 5 <img class="popover-icon" src="'.plugins_url( 'img/icon5.png' , __FILE__ ).'" /></span> <span class="available-icon-con">icon 6 <img class="popover-icon" src="'.plugins_url( 'img/icon6.png' , __FILE__ ).'" /></span> <span class="available-icon-con">icon 7 <img class="popover-icon" src="'.plugins_url( 'img/icon7.png' , __FILE__ ).'" /></span> <span class="available-icon-con">icon 8 <img class="popover-icon" src="'.plugins_url( 'img/icon8.png' , __FILE__ ).'" /></span></p>';
             $output.= '</div></div>';
             echo html_entity_decode($output);
@@ -493,6 +540,7 @@ class CQ_HotSpot {
                     'cq_hotspot_arrowstyle' => $_POST['cq_hotspot_arrowstyle'],
                     'cq_hotspot_dropinease' => $_POST['cq_hotspot_dropinease'],
                     'cq_hotspot_displayvideo' => $_POST['cq_hotspot_displayvideo'],
+                    'cq_hotspot_pulsecolor' => $_POST['cq_hotspot_pulsecolor'],
                     'cq_hotspot_customicon' => $_POST['cq_hotspot_customicon'],
                     'cq_hotspot_clickimageclose' => $_POST['cq_hotspot_clickimageclose']
                 );
@@ -511,6 +559,7 @@ class CQ_HotSpot {
                 $popover_label_prop = $_POST['popover_label_prop'];
                 $popover_link_prop = $_POST['popover_link_prop'];
                 $popover_target_prop = $_POST['popover_target_prop'];
+                $popover_ispulse = $_POST['popover_ispulse'];
                 $text_block = $_POST['text_block'];
                 for ( $j = 0; $j < count( $text_block); $j++ ) {
                     $new[$j]['text_block'] = $text_block[$j];
@@ -518,6 +567,7 @@ class CQ_HotSpot {
                     $new[$j]['popover_label_prop'] = $popover_label_prop[$j];
                     $new[$j]['popover_link_prop'] = $popover_link_prop[$j];
                     $new[$j]['popover_target_prop'] = $popover_target_prop[$j];
+                    $new[$j]['popover_ispulse'] = $popover_ispulse[$j];
                     $new[$j]['text_width_prop'] = $text_width_prop[$j];
                     $new[$j]['text_top_prop'] = $text_top_prop[$j];
                     $new[$j]['text_left_prop'] = $text_left_prop[$j];
